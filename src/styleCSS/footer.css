@@ -1,0 +1,35 @@
+#bigContaine{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: arial;
+    background-color: #d4d9ddb2;
+}
+#text-top{
+    margin-top: 2%;
+    font-size: 12px;
+}
+#desc{
+    display: flex;
+    width: 40%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    height: 130px;
+    align-items: center;
+}
+#social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    align-items: flex-start;
+    height: 100px;
+}
+.media-elem{
+    border-radius: 100%;
+    width: 45px;
+    display: flex;
+    height: 45px;
+}
