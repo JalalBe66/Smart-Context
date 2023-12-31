@@ -24,11 +24,20 @@ export default function Header(){
                 </div>
             </div>
             <div id="bottom-header">
-                <div className="nav-link">Acceuil</div>
-                <div className="nav-link">Services</div>
+                    <div className="nav-link">Acceuil</div>
+                    {/* <div className="nav-link">Services</div> */}
+                        <div class="services">
+                            <div class="service">
+                                <h3>Service </h3>
+                                <div class="service-details">
+                                    <a>service 1</a>
+                                    <a>service 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <div className="nav-link">FAQ</div>
                 <div className="nav-link">Contact</div>
-            </div>
-        </div>
+            </div>        
     )
 }

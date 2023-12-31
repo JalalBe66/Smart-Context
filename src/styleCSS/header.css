@@ -53,7 +53,7 @@
     height: 30px;
     display: flex;
 }
-#bottom-header{
+/* #bottom-header{
     display: flex;
     width:80% ;
     font-size:14px;
@@ -63,12 +63,142 @@
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     align-items: center;
     justify-content: space-between;
-}
-.nav-link{
+} */
+/* .nav-link{
     width: 100px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     
-}
+} */
+/* .services {
+    display: flex;
+  }
+  
+  .service {
+    width: 200px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .service-details {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .service:hover .service-details {
+    display: block;
+  }
+  
+  .service h3 {
+    margin-top: 0;
+  }
+  
+  .service p {
+    margin-bottom: 0;
+  } */
+  /* .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  /* .service {
+    background-color: #f1f1f1; 
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+  } */
+  
+  /* .service:hover {
+    transform: scale(1.05);
+  }
+  
+  .service h3 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .service-details {
+    margin-top: 20px;
+    display:none
+  }
+  
+  .service p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .service .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4e9cff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service .btn:hover {
+    background-color: #368eff;
+    display: contents;
+  } */
+  
+  
+
+
+  #bottom-header{
+    display: flex;
+    /* width:80% ; */
+    justify-content:space-between;
+    align-items: center;
+    font-size:14px;
+    font-weight:600;
+    font-size: 14px;
+    height: 50%;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    
+    
+  }
+  .services {
+    margin-right: 20px;
+  }
+  
+  .service {
+     position: relative; 
+  }
+  
+  .service-details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service:hover .service-details {
+    display: block;
+  }
+  
+  .service-details a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .service-details a:hover {
+    color: #4e9cff;
+  }
