@@ -3,6 +3,7 @@ import "../styleCSS/header.css"
 import Langue from "../images/langue.png"
 import Profile from "../images/user.png"
 import Menu from "../images/menu.png"
+import { NavLink } from "react-router-dom"
 export default function Header(){
     return(
         <div id="bigContainer">
@@ -24,10 +25,10 @@ export default function Header(){
                 </div>
             </div>
             <div id="bottom-header">
-                <div className="nav-link">Acceuil</div>
+                <NavLink to="/"><div className="nav-link">Acceuil</div></NavLink>
                 <div className="nav-link">Services</div>
-                <div className="nav-link">FAQ</div>
-                <div className="nav-link">Contact</div>
+                <NavLink to="/FAQ"><div className="nav-link">FAQ</div></NavLink>
+                <NavLink to="/Contact"><div className="nav-link">Contact</div></NavLink>
             </div>
         </div>
     )
