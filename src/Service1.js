@@ -17,7 +17,7 @@ export default function Service2() {
 
   }
   return (
-    <div>
+    <div style={{marginTop:"10%"}}>
       <div>
         
             <div id='grand-logo'>

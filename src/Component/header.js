@@ -26,9 +26,9 @@ export default function Header(){
             </div>
             <div id="bottom-header">
                 <NavLink to="/"><div className="nav-link">Acceuil</div></NavLink>
-                <div class="services">
-                            <div class="service">
-                                <h3>Service </h3>
+                <div className="services">
+                            <div  className="service">
+                                <p style={{color:"#717171",fontSize:"14px"}}>Service </p>
                                 <div class="service-details">
                                     <div id="service-elem-detail">
                                         <Link to="Service1"><div>Service 1</div></Link>

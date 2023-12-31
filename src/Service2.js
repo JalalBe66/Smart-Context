@@ -3,7 +3,7 @@ import GrandLogo from "./images/LogoComplet.png"
 import "./styleCSS/service2.css"
 export default function Service1() {
   return (
-    <div>
+    <div style={{marginTop:"10%"}}>
         <div>
             <div>
             <div id='grand-logo'>
