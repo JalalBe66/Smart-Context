@@ -3,8 +3,7 @@ import GrandLogo from "./images/logo.png"
 import Question from "./images/entrevue.png"
 import Plume from "./images/ecrit.png"
 import "./styleCSS/accueil.css"
-import Header from "./Component/header"
-import Footer from './Component/footer'
+import { Link } from 'react-router-dom'
 export default function Accueil() {
     return (
         <>
@@ -32,9 +31,7 @@ export default function Accueil() {
                         <div class='serv-contenu'>
                             <p>Pour obtenir une réponse qui répondra à vos besoins, veuillez fournir des informations générales sur votre projet. Bien que cela puisse ne pas être aussi précis qu'en répondant à des questions spécifiques, ces informations nous aideront à comprendre vos besoins globaux. Veuillez fournir autant de détails que possible sur les objectifs, les contraintes et les attentes de votre projet. Nous ferons de notre mieux pour vous fournir une réponse adaptée à votre situation. Merci !</p>
                         </div>
-                        <div class='serv-button'>
-                        Allez au service
-                        </div>
+                        <div class='serv-button'><Link className='serv-button-opt' to="Service1">Allez au service</Link></div>
                     </div>
                     <div id='sep'></div>
                     <div class='serv'>
@@ -47,9 +44,7 @@ export default function Accueil() {
                         <div class='serv-contenu'>
                             <p>Pour obtenir une réponse précise et exacte concernant votre projet, veuillez répondre aux questions spécifiques qui vous sont posées sur notre site. En fournissant des informations détaillées sur votre projet, nous pourrons vous offrir une assistance personnalisée et adaptée à vos besoins. Veuillez remplir les champs requis avec soin et fournir toutes les informations pertinentes. Nous nous engageons à vous fournir une réponse complète basée sur les informations que vous nous fournirez. Merci de votre collaboration !</p>
                         </div>
-                        <div class='serv-button'>
-                        Allez au service
-                        </div>
+                        <div class='serv-button'><Link className='serv-button-opt' to="Service2">Allez au service</Link></div>
                     </div>
                 </div>
             </div>
