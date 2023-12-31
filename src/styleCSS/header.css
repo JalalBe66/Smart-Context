@@ -79,6 +79,7 @@ a{
 }
 a.active{
     border-bottom: 2px solid #FF385C ;
+    transition: 2s width;
 }
 
 .services {

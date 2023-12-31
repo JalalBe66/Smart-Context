@@ -1,8 +1,50 @@
-#disc-services1 > p{
+#titre-p-serv1 > p{
     text-align: center;
     margin-top: 3%;
     font-size: 40px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
+}
+#titre-p-serv1{
+    margin-bottom: 10%;
+}
+#inp-img-serv1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 150px;
+    padding-inline:0.5% ;
+    border:solid 2px #909090 ;
+    width: 80%;
+}
+#input-srv1{
+    border: none;
+    height: 50px;
+    width: 70%;
+    border-radius: 150px;
+    font-size: 17px;
+    padding-left: 3%;
+}
+#input-srv1:focus{
+    outline: none;
+}
+#contenu-p-serv1{
+    margin-top: 2%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 45%;
+    padding: 3%;
+    border-radius: 23px;
+    background-color: #F0F5F9;
+    box-shadow: 2px 2px 4px grey;
+    margin-bottom: 10%;
+}
+
+#logo-serv1{
+    width: 50px;
+    height:50px;
 }
