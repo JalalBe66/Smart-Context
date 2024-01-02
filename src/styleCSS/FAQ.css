@@ -1,0 +1,41 @@
+#FAQ-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 400px;
+    
+}
+.faq{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    
+}
+.panel>p{
+    font-size: 17px;
+    font-family: itim;
+    color: #4E4E4E;
+}
+.panel{
+    background-color: #F0F5F9;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px grey
+}
+.accordion-serv1{
+    width: 230px;
+    height: 48px;
+    border: none;
+    font-size: 14px;
+    color: aliceblue;
+    border-radius: 27px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    font-family: Arial;
+    letter-spacing: 2px;
+    background: linear-gradient(to left ,rgb(130, 55, 164) ,#ff3877);
+}
