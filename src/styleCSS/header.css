@@ -84,7 +84,7 @@ a:hover{
     text-decoration: none;
 }
 a.active{
-    border-bottom: 2px solid #FF385C ;
+    border-bottom: 2px solid var(--violet)  ;
     font-weight: bold;
     color: black;
 
@@ -113,7 +113,7 @@ a.active{
   padding: 11px;
   box-shadow:1px 1px 2px grey ;
   border-radius: 10px;
-  border:dashed #ff385d93 1px ;
+  border:dashed var(--violet) 1px ;
 }
 
 .service:hover .service-details {
@@ -123,24 +123,24 @@ a.active{
 }
 
 .service-details a {
-  display: block;
-  margin-bottom: 5px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 15px;
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
 
 }
 
 .service-details a:hover {
-  color: #FF385C;
+    color:var(--violet);
 }
 #service-elem-detail{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 85px;
-  height: 60px;
-  border-radius: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85px;
+    height: 60px;
+    border-radius: 20px ;
 }

@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 #message:focus,#name:focus,#email:focus,#subject:focus{
-    box-shadow: 0 0 8px #ff99acb9;
+    box-shadow: 0 0 3px var(--violet);
     outline: none;
     
 }
@@ -16,7 +16,7 @@ body {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ff385d4a;
+    box-shadow: 0 0 5px #851BFD ;
 }
 
 .form-group {

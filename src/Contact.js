@@ -71,7 +71,7 @@ export default function Contact() {
         const allFull=()=>{
           let button=document.getElementsByClassName("submit-btn")[0]
           if(validName() && validEmail() && validSubject()){
-            button.style.backgroundColor="#FF385C"
+            button.style.backgroundColor="#851BFD"
             button.style.cursor="pointer"
             button.style.pointerEvents="all"
           }
@@ -84,7 +84,7 @@ export default function Contact() {
 
     return (
       <div className="contact-form">
-        <h2 style={{textAlign:"center" , fontSize:"220%", color:"#ff385d" , marginBottom:"50px"}}>Contact Us</h2>
+        <h2 style={{textAlign:"center" , fontSize:"220%", color:"#851BFD " , marginBottom:"50px"}}>Contact Us</h2>
         <form>
           <div className="form-group">
             

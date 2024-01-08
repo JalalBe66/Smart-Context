@@ -15,7 +15,7 @@ export default function FAQ() {
   return (
     <div id='FAQ-container' style={{ marginTop: "15%", marginBottom: "35%" }}>
       <div className="wrapper">
-        <h1 style={{ textAlign: 'center', marginBottom: "13%", fontFamily: "Arial", fontSize: "40px", color: "#FF385C" }}>Frequently Asked Questions</h1>
+        <h1 style={{ textAlign: 'center', marginBottom: "13%", fontFamily: "Arial", fontSize: "40px", color: "#851BFD " }}>Frequently Asked Questions</h1>
 
         <div className="faq">
           <button className="accordion-serv1" onClick={togglePanel1}>

@@ -48,6 +48,9 @@
     letter-spacing: 3px;
     
 }
+:root {
+    --violet:#b577fc ; 
+}
 #fonct-contenu{
     margin-top: 10%;
     display: flex;
@@ -100,7 +103,7 @@
     width:55% ;
     height: 10%;
     margin-top: 10%;
-    background-color: #E00B41;
+    background-color: var(--violet) ;
     display: flex;
     justify-content: center;
     align-items: center;
