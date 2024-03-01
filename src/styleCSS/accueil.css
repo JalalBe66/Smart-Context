@@ -49,7 +49,10 @@
     
 }
 :root {
-    --violet:#b577fc ; 
+    --violet:#9743f8 ; 
+}
+:root{
+    --blackV:#5400b4;
 }
 #fonct-contenu{
     margin-top: 10%;
@@ -109,6 +112,11 @@
     align-items: center;
     border-radius: 10px;
     font-weight: bolder;
+    transition: 0.5s all;
+}
+.serv-button:hover{
+    background-color: var(--blackV) ;
+    
 }
 a.serv-button-opt{
     width: 100%;
@@ -118,4 +126,7 @@ a.serv-button-opt{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+a.serv-button-opt:hover{
+    color: aliceblue;
 }

@@ -37,5 +37,9 @@
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/JalalBe66/Smart-Context",
+  "author": "JaBeXIX <jalalbelych011@gmail.com>",
+  "license": "MIT"
 }

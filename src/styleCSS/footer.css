@@ -22,7 +22,7 @@
 #social-media{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 50%;
     align-items: flex-start;
     height: 100px;

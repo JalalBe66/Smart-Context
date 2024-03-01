@@ -11,15 +11,15 @@ export default function Service1() {
                     <img src={GrandLogo} width={"500px"} height={"500px"} />
                 </div>
                 <div id='titre-p-serv2'>
-                    <p>Répondez Pour Une Réponse Précise:</p>
+                    <p>Respond For a Precise Answer</p>
                 </div>
             </div>
         </div>
         <div class="Container-barre-serv2">
           <Q1/>
           <div id='buttons-serv2'>
-            <button class="previous-button">Précédent</button>
-            <button class="next-button">Suivant</button>
+            <button class="previous-button">Previous</button>
+            <button class="next-button">Next</button>
           </div>
         </div>
 

@@ -14,18 +14,18 @@
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    border-radius: 150px;
+    border-radius: 10px;
     padding-inline:0.5% ;
     border:solid 2px #909090 ;
     width: 80%;
 }
 #input-srv1{
     border: none;
-    height: 50px;
     width: 70%;
-    border-radius: 150px;
+    border-radius: 10px;
     font-size: 17px;
     padding-left: 3%;
+    transition: all 2s;
 }
 #input-srv1:focus{
     outline: none;

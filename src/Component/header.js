@@ -1,6 +1,5 @@
 import React from "react"
 import "../styleCSS/header.css"
-import Langue from "../images/langue.png"
 import Profile from "../images/user.png"
 import Menu from "../images/menu.png"
 import { Link, NavLink } from "react-router-dom"
@@ -11,9 +10,6 @@ export default function Header(){
                 <div id="logo">
                 </div>
                 <div id="conn-lang">
-                    <div id="langue">
-                        <img src={Langue}  />
-                    </div>
                     <div id="connection">
                         <div id="option">
                             <img src={Menu} />

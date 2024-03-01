@@ -18,8 +18,8 @@
     align-items: center;
 }
 #logo{
-    width: 200px;
-    height: 100%;
+    width: 190px;
+    height: 110%;
     margin-left: 2%;
     background-image: url("../images/LogoComplet.png");
     background-size: cover;
