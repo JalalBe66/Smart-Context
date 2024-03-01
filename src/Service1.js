@@ -31,7 +31,6 @@ export default function Service2() {
               <div id='inp-img-serv1'>
                 <textarea onBlur={resetColor} onFocus={changeColorInp} id='input-srv1' type="text" placeholder="Ajoutez votre projet" />
                 <img src={PetitLogo} id="logo-serv1"/>
-                
               </div>
             <div>
       

@@ -15,7 +15,7 @@ export default function Accueil() {
                     DESCRIPTION
                 </div>
                 <div id='disc-contenu'>
-                <p>Découvrez notre site web innovant basé sur l'apprentissage par sérvice. Transformez vos besoins et problématiques en solutions précises et bien définies. Notre plateforme intuitive vous guide pas à pas pour identifier vos besoins spécifiques et développer les compétences nécessaires. Que vous soyez un individu en quête de développement professionnel ou une entreprise cherchant des solutions efficaces, notre site web vous offre les outils et les ressources pour relever les défis avec confiance. Rejoignez-nous dès maintenant pour atteindre vos objectifs de manière ciblée et réussie.</p>
+                <p>Discover our innovative website based on service learning. Transform your needs and challenges into precise and well-defined solutions. Our intuitive platform guides you step by step to identify your specific needs and develop the necessary skills. Whether you are an individual seeking professional development or a company looking for effective solutions, our website provides you with the tools and resources to confidently meet challenges. Join us now to achieve your goals in a targeted and successful manner..</p>
                 </div>
                 <div id='fonct-title'>
                     FONCTIONNEMENT
@@ -26,12 +26,12 @@ export default function Accueil() {
                             <img src={Plume} width={"70px"}/>
                         </div>
                         <div class='serv-title'>
-                        Réponse Adaptée Grâce Aux Informations Générales De Votre Projet:
+                        Based on the general information about your project, here is the adapted response:
                         </div>
                         <div class='serv-contenu'>
-                            <p>Pour obtenir une réponse qui répondra à vos besoins, veuillez fournir des informations générales sur votre projet. Bien que cela puisse ne pas être aussi précis qu'en répondant à des questions spécifiques, ces informations nous aideront à comprendre vos besoins globaux. Veuillez fournir autant de détails que possible sur les objectifs, les contraintes et les attentes de votre projet. Nous ferons de notre mieux pour vous fournir une réponse adaptée à votre situation. Merci !</p>
+                            <p>To receive a response that caters to your needs, please provide general information about your project. While this may not be as specific as answering specific questions, these details will help us understand your overall requirements. Please provide as many details as possible about the goals, constraints, and expectations of your project. We will do our best to provide you with a response that is tailored to your situation. Thank you!</p>
                         </div>
-                        <div class='serv-button'><Link className='serv-button-opt' to="Service1">Allez au service</Link></div>
+                        <div class='serv-button'><Link className='serv-button-opt' to="Service1">Access the service</Link></div>
                     </div>
                     <div id='sep'></div>
                     <div class='serv'>
@@ -39,12 +39,12 @@ export default function Accueil() {
                         <img src={Question} width={"70"}/>
                         </div>
                         <div class='serv-title'>
-                        Répondez Pour Une Réponse Précise:
+                        Answer for a precise response:
                         </div>
                         <div class='serv-contenu'>
-                            <p>Pour obtenir une réponse précise et exacte concernant votre projet, veuillez répondre aux questions spécifiques qui vous sont posées sur notre site. En fournissant des informations détaillées sur votre projet, nous pourrons vous offrir une assistance personnalisée et adaptée à vos besoins. Veuillez remplir les champs requis avec soin et fournir toutes les informations pertinentes. Nous nous engageons à vous fournir une réponse complète basée sur les informations que vous nous fournirez. Merci de votre collaboration !</p>
+                            <p>To obtain a precise and accurate response regarding your project, please answer the specific questions posed on our website. By providing detailed information about your project, we can offer you personalized and tailored assistance to meet your needs. Please carefully fill out the required fields and provide all relevant information. We are committed to providing you with a comprehensive response based on the information you provide. Thank you for your cooperation!</p>
                         </div>
-                        <div class='serv-button'><Link className='serv-button-opt' to="Service2">Allez au service</Link></div>
+                        <div class='serv-button'><Link className='serv-button-opt' to="Service2">Access the service</Link></div>
                     </div>
                 </div>
             </div>
