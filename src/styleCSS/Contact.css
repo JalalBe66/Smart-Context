@@ -61,3 +61,36 @@ body {
     margin-left: 10px;
     font-weight: bolder;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 8px 15px;
+    }
+}

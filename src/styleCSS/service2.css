@@ -64,3 +64,40 @@ button.previous-button:hover,button.next-button:hover {
     justify-content: space-between;
     margin-bottom: 3%;
 }
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #titre-p-serv2 > p {
+        font-size: 30px;
+    }
+    
+    .Container-barre-serv2 {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    .previous-button, .next-button {
+        width: 40%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #titre-p-serv2 > p {
+        font-size: 24px;
+    }
+    
+    .Container-barre-serv2 {
+        margin-left: 5%;
+        width: 90%;
+    }
+    
+    .previous-button, .next-button {
+        width: 50%;
+        font-size: 12px;
+    }
+}
