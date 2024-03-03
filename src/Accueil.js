@@ -8,9 +8,7 @@ export default function Accueil() {
     return (
         <>
             <div id='accueil-container'>
-                <div id='grand-logo'>
-                    <img src={GrandLogo} width={"330px"} />
-                </div>
+                    <img src={GrandLogo} width={"220px"} height={"200px"} style={{marginBottom:"3%"}} />
                 <div id='disc-title'>
                     DESCRIPTION
                 </div>
