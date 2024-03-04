@@ -6,21 +6,31 @@ import "./styleCSS/service1.css";
 export default function Service1() {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState('');
+    let changeColorInp=()=>{
+    let divB=document.getElementById("full-inp")
+    divB.style.border="solid 1px var(--violet)"
+    divB.style.boxShadow="1px 1px 5px var(--violet)"
+    divB.style.transition="0.6s"
 
+  }
+  let resetColor=()=>{
+    let divB=document.getElementById("full-inp")
+    divB.style.boxShadow="none"
+  }
   const sendMessage = () => {
-    let chatDiv = document.getElementsByClassName("chat-messages")[0];
-    let input = document.getElementById("input-v");
-    let divReq = document.createElement("div");
-    let divReqP = document.createElement("div");
-    let divP = document.createElement("p");
-    divReq.id = "divReq";
-    divReqP.id = "divReqP";
-    divP.id = "divP";
-    divP.innerHTML = userInput;
-    divReqP.append(divP);
-    divReq.append(divReqP);
-    chatDiv.appendChild(divReq);
     if (userInput.trim() !== '') {
+      let chatDiv = document.getElementsByClassName("chat-messages")[0];
+      let input = document.getElementById("input-v");
+      let divReq = document.createElement("div");
+      let divReqP = document.createElement("div");
+      let divP = document.createElement("p");
+      divReq.id = "divReq";
+      divReqP.id = "divReqP";
+      divP.id = "divP";
+      divP.innerHTML = userInput;
+      divReqP.append(divP);
+      divReq.append(divReqP);
+      chatDiv.appendChild(divReq);
       setMessages([...messages, { text: userInput, sender: 'user' }]);
       // Simulate AI response (replace this with your actual API call to ChatGPT)
       setMessages([...messages, { text: 'AI response', sender: 'ai' }]);
@@ -44,13 +54,18 @@ export default function Service1() {
           ))}
         </div>
         <div className="chat-input">
+          <div id='full-inp'>
+
           <textarea
             type="text"
+            onBlur={resetColor} 
+            onFocus={changeColorInp}
             id='input-v'
             placeholder="Type your message..."
             onChange={(e) => setUserInput(e.target.value)}
           />
-          <button onClick={sendMessage}>Send</button>
+          <button id='btn-serv1' onClick={sendMessage}>Send</button>
+          </div>
         </div>
       </div>
     </div>
