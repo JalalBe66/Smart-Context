@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import GrandLogo from "./images/logo.png";
 import Q1 from "./question1";
 import "./styleCSS/service1.css";
+import ImageFlech from "./images/fleche-droite.png"
 
 export default function Service1() {
   const [generatedText, setGeneratedText] = useState('');
@@ -52,7 +53,7 @@ export default function Service1() {
         </div>
         <div className="chat-messages">
           {messages.map((message, index) => (
-            <div key={index} id='divR' className={message.sender}>
+            <div key={index} id='divR' >
               <div id='divRes'>{message.text}</div>
             </div>
           ))}
@@ -68,7 +69,7 @@ export default function Service1() {
             placeholder="Type your message..."
             onChange={(e) => setUserInput(e.target.value)}
           />
-          <button id='btn-serv1' onClick={sendMessage}>Send</button>
+          <div style={{width:"43px",height:"43px",display:"flex"}}><button  id='btn-serv1' onClick={sendMessage}></button></div>
           </div>
         </div>
       </div>

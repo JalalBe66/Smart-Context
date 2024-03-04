@@ -10,11 +10,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 147vh;
 }
 
 .chat {
-    width: 55%;
+    width: 53%;
     height: 70%; /* Hauteur fixe pour éviter le redimensionnement */
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -69,14 +69,6 @@ body {
     outline: none;
 }
 
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
 #imgL {
     width: 120px;
@@ -107,11 +99,14 @@ button {
     border-radius: 20px;
 }
 #btn-serv1{
-    padding: 1.5%;
-    padding-inline: 3%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #b765ff;
+    width: 100%;
+    height: 100%;
+    border:none;
+    border-radius:50%;
+    background-color:var(--blackV);
+    background-image:url("../images/fleche-droite.png") ;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
