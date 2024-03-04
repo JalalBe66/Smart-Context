@@ -1,56 +1,112 @@
-#titre-p-serv1 > p{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.chat-container {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 147vh;
+}
+
+.chat {
+    width: 53%;
+    height: 70%; /* Hauteur fixe pour éviter le redimensionnement */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(244, 239, 255), white);
+}
+
+.chat-header {
     
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    color:var(--blackV);
+    font-size:140%;
+    padding-top: 5%;
     text-align: center;
-    /* margin-top: 20%; */
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
 }
-#titre-p-serv1{
-    margin-bottom: 10%;
+
+.chat-messages {
+    flex: 1; /* Remplir l'espace disponible */
+    overflow-y: auto;
+    padding: 5%;
+    
 }
-#inp-img-serv1{
+
+.chat-input {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding-inline:0.5% ;
-    border:solid 2px #909090 ;
-    width: 80%;
+    padding: 10px;
+    justify-content: center;
 }
-#input-srv1{
+#full-inp{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-evenly;
+    border: solid 1px var(--violet);
+    width: 85%;
+    border-radius:50px ;
+    margin: 4%;
+}
+#input-v{
     border: none;
-    width: 70%;
+    width: 50%;
     border-radius: 10px;
     font-size: 17px;
     padding-left: 3%;
     transition: all 2s;
 }
-#input-srv1:focus{
+#input-v:focus{
     outline: none;
 }
-#contenu-p-serv1{
-    margin-top: 2%;
-    margin-left: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 45%;
-    padding: 3%;
-    border-radius: 23px;
-    background-color: #F0F5F9;
-    box-shadow: 2px 2px 4px grey;
-    margin-bottom: 10%;
-}
 
-#logo-serv1{
-    width: 50px;
-    height:50px;   
+
+#imgL {
+    width: 120px;
+    height: 120px;
 }
-@media (max-width: 480px) {
-    #titre-p-serv1{
-        margin-bottom: 10%;
-    }
+#divReq{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+}
+#divReqP{
+    background:linear-gradient(to left,#8e49ca ,rgb(113, 90, 206));
+    padding-inline: 3%;
+    color: white;
+    border-radius: 20px;
+}
+#divR{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#divRes{
+    background:linear-gradient(to left,#8e49ca ,rgb(113, 90, 206));
+    padding: 2%;
+    margin-bottom: 3%;
+    color: white;
+    border-radius: 20px;
+}
+#btn-serv1{
+    width: 100%;
+    height: 100%;
+    border:none;
+    border-radius:50%;
+    background-color:var(--blackV);
+    background-image:url("../images/fleche-droite.png") ;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }

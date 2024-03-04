@@ -17,7 +17,7 @@ export default function FAQ() {
   };
 
   return (
-    <div id='FAQ-container' style={{ marginTop: "15%", marginBottom: "35%" }}>
+    <div id='FAQ-container' style={{ marginTop: "15%", marginBottom: "45%" }}>
       <div className="wrapper">
         <h1 style={{ textAlign: 'center', marginBottom: "13%", fontFamily: "Arial", fontSize: "40px", color: "#851BFD " }}>Frequently Asked Questions</h1>
 
