@@ -1,56 +1,92 @@
-#titre-p-serv1 > p{
-    
-    text-align: center;
-    /* margin-top: 20%; */
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 3px;
-}
-#titre-p-serv1{
-    margin-bottom: 10%;
-}
-#inp-img-serv1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding-inline:0.5% ;
-    border:solid 2px #909090 ;
-    width: 80%;
-}
-#input-srv1{
-    border: none;
-    width: 70%;
-    border-radius: 10px;
-    font-size: 17px;
-    padding-left: 3%;
-    transition: all 2s;
-}
-#input-srv1:focus{
-    outline: none;
-}
-#contenu-p-serv1{
-    margin-top: 2%;
-    margin-left: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 45%;
-    padding: 3%;
-    border-radius: 23px;
-    background-color: #F0F5F9;
-    box-shadow: 2px 2px 4px grey;
-    margin-bottom: 10%;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-#logo-serv1{
-    width: 50px;
-    height:50px;   
+.chat-container {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
 }
-@media (max-width: 480px) {
-    #titre-p-serv1{
-        margin-bottom: 10%;
-    }
+
+.chat {
+    width: 50%;
+    height: 70%; /* Hauteur fixe pour éviter le redimensionnement */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(244, 239, 255), white);
+}
+
+.chat-header {
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    color:var(--blackV);
+    font-size:140%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.chat-messages {
+    flex: 1; /* Remplir l'espace disponible */
+    overflow-y: auto;
+    padding: 5%;
+    
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#imgL {
+    width: 120px;
+    height: 120px;
+}
+#divReq{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#divReqP{
+    background:linear-gradient(to left,#8e49ca ,rgb(113, 90, 206));
+    padding-inline: 3%;
+    color: white;
+    border-radius: 40px;
+}
+#divR{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#divRes{
+    background:linear-gradient(to left,#8e49ca ,rgb(113, 90, 206));
+    padding: 2%;
+    color: white;
+    border-radius: 40px;
 }
