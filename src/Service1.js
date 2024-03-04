@@ -4,6 +4,8 @@ import Q1 from "./question1";
 import "./styleCSS/service1.css";
 
 export default function Service1() {
+  const [generatedText, setGeneratedText] = useState('');
+  const TOKEN = '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';
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState('');
     let changeColorInp=()=>{
@@ -18,7 +20,9 @@ export default function Service1() {
     divB.style.boxShadow="none"
   }
   const sendMessage = () => {
+    
     if (userInput.trim() !== '') {
+      
       let chatDiv = document.getElementsByClassName("chat-messages")[0];
       let input = document.getElementById("input-v");
       let divReq = document.createElement("div");
