@@ -170,6 +170,9 @@ a.serv-button-opt:hover{
     #grand-logo{
         margin-top: 10%;
     }
+    #accueil-container {
+        margin-top: 20%;
+    }
 }
 @media (max-width: 366px) {
     #accueil-container {

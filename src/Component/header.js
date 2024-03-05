@@ -1,15 +1,30 @@
 import React from "react"
+import { useState } from "react"
 import "../styleCSS/header.css"
 import Profile from "../images/user.png"
 import Menu from "../images/menu.png"
+import utilisateur from "../images/utilisateur.png"
+import burger from "../images/burger-bar.png"
 import { Link, NavLink } from "react-router-dom"
 export default function Header(){
+    const [showModal,setshowModal]=useState(false)
     return(
         <div id="bigContainer">
             <div id="top-header">
                 <div id="logo">
                 </div>
-                <div id="conn-lang">
+                <div className="icone" >
+                    
+                    <button id="btnBurger" onClick={() => { 
+                setshowModal(true)
+                }}>
+                        <img id="burger" src={burger} height={"32px"} style={{padding:"4px"}}/>
+                    </button>
+                    <img id="profile" src={utilisateur} height={"56px"} style={{padding:"4px"}}/> 
+                </div>
+                
+                
+                {/* <div id="conn-lang">
                     <div id="connection">
                         <div id="option">
                             <img src={Menu} />
@@ -18,9 +33,9 @@ export default function Header(){
                             <img src={Profile} />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
-            <div id="bottom-header">
+            {showModal &&(<div id="bottom-header">
                 <NavLink to="/"><div className="nav-link">Acceuil</div></NavLink>
                 <div className="services">
                             <div  className="service">
@@ -37,6 +52,13 @@ export default function Header(){
                 <NavLink to="/FAQ"><div className="nav-link">FAQ</div></NavLink>
                 <NavLink to="/Contact"><div className="nav-link">Contact</div></NavLink>
             </div>
+            )}
         </div>
     )
 }
+
+
+
+
+
+

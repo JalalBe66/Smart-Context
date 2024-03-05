@@ -1,4 +1,4 @@
-#bigContainer{
+ #bigContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,3 +144,51 @@ a.active{
     height: 60px;
     border-radius: 20px ;
 }
+#burger{
+    display: none ;
+}
+.icone{
+    display: flex;
+    justify-content: space-between;
+}
+#btnBurger{
+    background-color:transparent !important;
+}
+@media (max-width: 768px) {
+    #bottom-header{
+        display: none;
+    }
+    
+     #burger{
+        display: block ;
+    }
+} 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+ 
