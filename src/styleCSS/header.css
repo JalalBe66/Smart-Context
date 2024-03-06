@@ -154,7 +154,65 @@ a.active{
 #btnBurger{
     background-color:transparent !important;
 }
+#fixed{
+    display: flex;
+    flex-direction: column;
+    display: none ;
+}
+
+
+/* #fixed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    z-index: 1000; 
+  }
+  
+  #fixed .nav-link {
+    padding: 15px; 
+    font-size: 18px; 
+    color: #333; 
+    text-decoration: none;
+    transition: background-color 0.3s; 
+  }
+  
+  #fixed .nav-link:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  .services {
+    margin-top: 20px; 
+  }
+  
+  .service {
+    margin-bottom: 10px; 
+  }
+  
+  .service p {
+    font-size: 16px; 
+    margin-bottom: 5px; 
+  }
+  
+  .service-details {
+    margin-left: 10px; 
+  }
+  
+  #fixed .nav-link,
+  #fixed .service-details a {
+    color: #333; 
+  } */
+
 @media (max-width: 768px) {
+    #fixed{
+        display: block;
+        border-radius: 10%;
+        border: #000000 solid 2px;
+        width: 60%;
+    }
     #bottom-header{
         display: none;
     }
@@ -162,6 +220,44 @@ a.active{
      #burger{
         display: block ;
     }
+    #fixed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5%;
+        padding: 5%;
+      }
+    
+      #fixed{
+        position: fixed;
+        inset: 0;
+        z-index: 11;
+        background:rgba(100, 100, 106, 0.91);
+        backdrop-filter: blur(8px);
+
+        
+    }
+    
+    
+      #fixed .nav-link,
+      #fixed .service p,
+      #fixed .service-details a {
+        color: #333; /* Couleur du texte */
+        text-decoration: none;
+        font-size: 18px; /* Taille du texte */
+        font-weight: 600; /* Poids du texte */
+        transition: background-color 0.3s;
+      }
+      /* #first-child{
+        
+      } */
+    
+      #fixed .nav-link:hover,
+      #fixed .service-details a:hover {
+        background-color: #f0f0f0;
+         
+      }
 } 
  
 
