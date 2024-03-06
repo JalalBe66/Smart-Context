@@ -1,6 +1,6 @@
 import react from "react"
 import Service1 from "./Service1"
-import Service2 from "./Service2"
+import Form from "./stepForm/form"
 import Contact from "./Contact"
 import FAQ from "./FAQ"
 import Accueil from "./Accueil"
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Accueil/>} />
           <Route path="Service1" element={<Service1/>}/>
-          <Route path="Service2" element={<Service2/>}/>
+          <Route path="Service2" element={<Form/>}/>
           <Route path="FAQ" element={<FAQ/>}/>
           <Route path="Contact" element={<Contact/>}/>
         </Routes>
