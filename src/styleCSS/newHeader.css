@@ -1,0 +1,28 @@
+.first-header{
+    
+    width: 100%;
+    
+    
+}
+.navbar{
+    background-color: white !important;
+}
+/* .container-fluid{
+    background-color: white;
+} */
+.btnMenu{
+    display: none ;
+    float: top;
+    
+}
+
+@media  (max-width:991px){
+    .btnMenu{
+        display: block;
+        float: right !important;
+        width: 80px;
+        background-color: transparent !important;
+        height: 26px;
+
+    }
+}
