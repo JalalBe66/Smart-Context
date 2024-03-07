@@ -6,12 +6,12 @@ import FAQ from "./FAQ"
 import Accueil from "./Accueil"
 import "./styleCSS/App.css"
 import Footer from "./Component/footer"
-import Header from "./Component/header"
+import New from "./Component/newHeader"
 import {Routes , Route} from "react-router-dom"
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <New/>
       
         <Routes>
           <Route path="/" element={<Accueil/>} />
