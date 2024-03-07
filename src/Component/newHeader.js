@@ -90,33 +90,33 @@ function New(){
     <span className="navbar-toggler-icon"></span>
   </button>
 </div>
-            <div className="col-1"/>
-            <div className="col-4 d-flex justify-content-center align-items-center">
+            <div className="col-12"/>
+            <div className="col-5 d-flex justify-content-center align-items-center">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <div className="col-3"/>
+                        <div className="col-11"/>
                         <li class="nav-item">
                             <NavLink to="/">
                                 <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
                             </NavLink>    
                         </li>
-                        <div className="col-4"/>
+                        <div className="col-10"/>
                         <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><Link  to="Service1"><a class="dropdown-item" href="#">Service 1</a></Link></li>
-                                            <li><Link to="Service2"><a class="dropdown-item" href="#">Service 2</a></Link></li>
+                                            <li><Link to="Service1"><a  id="link-serv" class="dropdown-item" href="#">Service 1</a></Link></li>
+                                            <li><Link  to="Service2"><a id="link-serv" class="dropdown-item" href="#">Service 2</a></Link></li>
                                         </ul>
                         </li>
-                        <div className="col-4"/>
+                        <div className="col-10"/>
                         <li class="nav-item">
                             <NavLink to="/FAQ">    
                                 <a id="link" class="nav-link" href="#">FAQ</a>
                             </NavLink>    
                         </li>
-                        <div className="col-4"/>
+                        <div className="col-10"/>
                         <li class="nav-item">
                             <NavLink  to="/Contact">
                                 <a id="link" class="nav-link" href="#">Contact</a>
@@ -139,17 +139,17 @@ function New(){
 
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <h5 style={{color:"var(--violet)"}} class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <p>Try scrolling the rest of the page to see this option in action.</p>
+    
     <div className="col-4">
     
         <ul class="navbar-nav flex-column me-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <NavLink to="/">
-                    <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                    <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
                 </NavLink>
             </li>
             <li class="nav-item dropdown">
@@ -157,18 +157,18 @@ function New(){
                     Services
                 </a>
                 <ul class="dropdown-menu">
-                    <li><Link to="Service1"><a class="dropdown-item" href="#">Service 1</a></Link></li>
-                    <li><Link to="Service2"><a class="dropdown-item" href="#">Service 2</a></Link></li>
+                    <li><Link  to="Service1"><a id="link-serv" class="dropdown-item" href="#">Service 1</a></Link></li>
+                    <li><Link  to="Service2"><a id="link-serv" class="dropdown-item" href="#">Service 2</a></Link></li>
                 </ul>
             </li>
             <li class="nav-item">
                 <NavLink to="/FAQ">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a id="link" class="nav-link" href="#">FAQ</a>
                 </NavLink>
             </li>
             <li class="nav-item">
                 <NavLink to="/Contact">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a id="link" class="nav-link" href="#">Contact</a>
                 </NavLink>
             </li>
         </ul>

@@ -21,6 +21,12 @@ a.active #link{
     color: black;
 
 }
+#link-serv:hover{
+    color: var(--violet);
+}
+.offcanvas-body{
+    background: linear-gradient(rgb(244, 239, 255), white);
+}
 a{
     color: #717171;
     text-decoration: none;
