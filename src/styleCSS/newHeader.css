@@ -12,9 +12,13 @@
 } */
 .btnMenu{
     display: none ;
-    float: top;
+    margin-bottom: 45px;
     
 }
+
+
+
+
 
 @media  (max-width:991px){
     .btnMenu{
