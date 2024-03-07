@@ -15,7 +15,24 @@
     float: top;
     
 }
+a.active #link{
+    border-bottom: 2px solid var(--violet)  ;
+    font-weight: bold;
+    color: black;
 
+}
+a{
+    color: #717171;
+    text-decoration: none;
+}
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+.navbar-toggler{
+    height: 50px;
+    width: 200px;
+}
 @media  (max-width:991px){
     .btnMenu{
         display: block;

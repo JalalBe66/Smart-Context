@@ -1,10 +1,11 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react"
 import { Link, NavLink } from "react-router-dom";
 import logoComplet from "../images/logo.png"
 import user from "../images/utilisateur.png"
 import menu from "../images/menu.png"
-import styles from "../styleCSS/newHeader.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import "../styleCSS/newHeader.css"
 function New(){
     return(
         <>
@@ -72,24 +73,23 @@ function New(){
                         </i>
                     </a>
                 </NavLink>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
             </div>
             <div className="col-10"></div>
-            
-            
-            <div className="col-1 profile d-flex justify-content-end align-items-right">
-                <a class="navbar-brand" href="#"><i><img src={user} height={"66px"} /></i></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div className="col-12 d-flex justify-content-end">
-                <button class="btnMenu " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                    <i><img src={menu} height={"52px"} /></i>
-                </button>
-            </div>
-            </div>
+            <div className="col-1 profile d-flex justify-content-end align-items-center">
+  <a className="navbar-brand" href="#">
+    <i><img src={user} height={"66px"} alt="User" /></i>
+  </a>
+  <button
+    className="navbar-toggler"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasScrolling"
+    aria-controls="offcanvasScrolling"
+  >
+    <span className="navbar-toggler-icon"></span>
+  </button>
+</div>
             <div className="col-1"/>
             <div className="col-4 d-flex justify-content-center align-items-center">
                 <div class="collapse navbar-collapse">
@@ -97,7 +97,7 @@ function New(){
                         <div className="col-3"/>
                         <li class="nav-item">
                             <NavLink to="/">
-                                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                                <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
                             </NavLink>    
                         </li>
                         <div className="col-4"/>
@@ -106,20 +106,20 @@ function New(){
                                         Services
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><Link to="Service1"><a class="dropdown-item" href="#">Service 1</a></Link></li>
+                                            <li><Link  to="Service1"><a class="dropdown-item" href="#">Service 1</a></Link></li>
                                             <li><Link to="Service2"><a class="dropdown-item" href="#">Service 2</a></Link></li>
                                         </ul>
                         </li>
                         <div className="col-4"/>
                         <li class="nav-item">
                             <NavLink to="/FAQ">    
-                                <a class="nav-link" href="#">FAQ</a>
+                                <a id="link" class="nav-link" href="#">FAQ</a>
                             </NavLink>    
                         </li>
                         <div className="col-4"/>
                         <li class="nav-item">
-                            <NavLink to="/Contact">
-                                <a class="nav-link" href="#">Contact</a>
+                            <NavLink  to="/Contact">
+                                <a id="link" class="nav-link" href="#">Contact</a>
                             </NavLink>    
                             
                         </li>
