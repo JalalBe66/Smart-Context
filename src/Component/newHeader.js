@@ -1,10 +1,10 @@
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from "react"
 import { Link, NavLink } from "react-router-dom";
 import logoComplet from "../images/logo.png"
 import user from "../images/utilisateur.png"
 import menu from "../images/menu.png"
-import "../styleCSS/newHeader.css"
+import styles from "../styleCSS/newHeader.css";
 function New(){
     return(
         <>
@@ -61,7 +61,7 @@ function New(){
                     </div>
                 </nav> */}
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <div class="container-fluid">
         <div className="row first-header">
 
             <div className="col-1 d-flex align-items-center">
