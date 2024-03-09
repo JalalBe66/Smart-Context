@@ -19,8 +19,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 45%;
+    width: 48%;
     padding: 3%;
+    
     border-radius: 23px;
     background-color: #F0F5F9;
     box-shadow: 2px 2px 4px grey;
