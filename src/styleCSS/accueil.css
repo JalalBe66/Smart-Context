@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 11%;
+    margin-top: 4%;
     align-items: center;
     
 }
@@ -143,7 +143,7 @@ a.serv-button-opt:hover{
 
 @media (max-width: 480px) {
     #accueil-container {
-        margin-top: 10%;
+        margin-top: 6%;
     }
     
     #disc-title, #fonct-title {
@@ -168,22 +168,22 @@ a.serv-button-opt:hover{
 
 @media (max-width: 1000px) {
     #grand-logo{
-        margin-top: 10%;
+        margin-top: 6%;
     }
 }
 @media (max-width: 366px) {
     #accueil-container {
-        margin-top: 30%;
+        margin-top: 10%;
     }
 }
 
 
 @media (max-width: 768px) {
     #accueil-container {
-        margin-top: 30%;
+        margin-top: 6%;
     }
     #grand-logo{
-        margin-top: 20%;
+        margin-top: 10%;
     }
     #disc-contenu {
         width: 70%;
