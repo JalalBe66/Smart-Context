@@ -3,7 +3,7 @@ import GrandLogo from "./images/logo.png";
 import Q1 from "./question1";
 import "./styleCSS/service1.css";
 import ImageFlech from "./images/fleche-droite.png"
-
+import axios from 'axios';
 export default function Service1() {
   const [generatedText, setGeneratedText] = useState('');
   const TOKEN = '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';
@@ -20,29 +20,39 @@ export default function Service1() {
     let divB=document.getElementById("full-inp")
     divB.style.boxShadow="none"
   }
-  const sendMessage = () => {
-    
+  const sendMessage = async () => {
     if (userInput.trim() !== '') {
       
-      let chatDiv = document.getElementsByClassName("chat-messages")[0];
-      let input = document.getElementById("input-v");
-      let divReq = document.createElement("div");
-      let divReqP = document.createElement("div");
-      let divP = document.createElement("p");
-      divReq.id = "divReq";
-      divReqP.id = "divReqP";
-      divP.id = "divP";
-      divP.innerHTML = userInput;
-      divReqP.append(divP);
-      divReq.append(divReqP);
-      chatDiv.appendChild(divReq);
-      setMessages([...messages, { text: userInput, sender: 'user' }]);
-      // Simulate AI response (replace this with your actual API call to ChatGPT)
-      setMessages([...messages, { text: 'AI response', sender: 'ai' }]);
-      setUserInput('');
-      input.value = "";
+      try {
+        const response = await axios.post(
+          "https://api-inference.huggingface.co/models/facebook/bart-large-cnn",
+          { inputs: "The capital of the country : '" + userInput + "'." },
+          { headers: { Authorization: `Bearer ${TOKEN}` } }
+
+        );
+        let chatDiv = document.getElementsByClassName("chat-messages")[0];
+        let input = document.getElementById("input-v");
+        let divReq = document.createElement("div");
+        let divReqP = document.createElement("div");
+        let divP = document.createElement("p");
+        divReq.id = "divReq";
+        divReqP.id = "divReqP";
+        divP.id = "divP";
+        divP.innerHTML = userInput;
+        divReqP.append(divP);
+        divReq.append(divReqP);
+        chatDiv.appendChild(divReq);
+        const generatedText = response.data[0].summary_text;
+
+        setMessages([...messages, { text: userInput, sender: 'user' }]);
+        setMessages([...messages, { text: generatedText, sender: 'ai' }]);
+        setUserInput('');
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
     }
-  };
+  }
+
 
   return (
     <div className="chat-container">
