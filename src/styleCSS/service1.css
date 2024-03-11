@@ -7,6 +7,7 @@ body {
 
 .chat-container {
     margin-top: 2%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +15,7 @@ body {
 }
 
 .chat {
-    width: 53%;
+    width: 60%;
     height: 70%; /* Hauteur fixe pour éviter le redimensionnement */
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -25,15 +26,22 @@ body {
 }
 
 .chat-header {
+    display: flex;
     
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 5px;
     color:var(--blackV);
-    font-size:140%;
-    padding-top: 5%;
-    text-align: center;
+    font-size:14%;
+    padding-top: 2%;
+    text-align: left;
+    margin-left: 1% ;
+    
+    
 }
-
+#text{
+    margin-left: 1%;
+    margin-top: 1%;
+}
 .chat-messages {
     flex: 1; /* Remplir l'espace disponible */
     overflow-y: auto;
@@ -56,14 +64,17 @@ body {
     width: 85%;
     border-radius:50px ;
     margin: 4%;
+    
 }
 #input-v{
     border: none;
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
     font-size: 17px;
     padding-left: 3%;
     transition: all 2s;
+    resize: both;
+    height: auto;
 }
 #input-v:focus{
     outline: none;
@@ -71,8 +82,8 @@ body {
 
 
 #imgL {
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
 }
 #divReq{
     display: flex;
@@ -85,6 +96,10 @@ body {
     padding-inline: 3%;
     color: white;
     border-radius: 20px; 
+    /* overflow: auto; */
+    /* word-wrap: break-word; */
+    word-wrap: break-word; /* Permet au texte de revenir à la ligne si nécessaire */
+    overflow: auto;
   }
 #divR{
     display: flex;

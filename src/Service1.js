@@ -49,7 +49,7 @@ export default function Service1() {
       <div className="chat">
         <div className="chat-header">
           <img src={GrandLogo} alt="logo" id='imgL' />
-          <h2>ESL AI</h2>
+          <h2 id='text'>ESL AI</h2>
         </div>
         <div className="chat-messages">
           {messages.map((message, index) => (
