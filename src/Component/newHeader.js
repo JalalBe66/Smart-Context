@@ -94,13 +94,13 @@ function New(){
             <div className="col-5 d-flex justify-content-center align-items-center">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <div className="col-11"/>
+                        <div className="col-5"/>
                         <li class="nav-item">
                             <NavLink to="/">
                                 <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
                             </NavLink>    
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-8"/>
                         <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
@@ -110,13 +110,13 @@ function New(){
                                             <li><Link  to="Service2"><a id="link-serv" class="dropdown-item" href="#">Service 2</a></Link></li>
                                         </ul>
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-8"/>
                         <li class="nav-item">
                             <NavLink to="/FAQ">    
                                 <a id="link" class="nav-link" href="#">FAQ</a>
                             </NavLink>    
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-8"/>
                         <li class="nav-item">
                             <NavLink  to="/Contact">
                                 <a id="link" class="nav-link" href="#">Contact</a>
