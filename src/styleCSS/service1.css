@@ -85,6 +85,8 @@ body {
     padding-inline: 3%;
     color: white;
     border-radius: 20px; 
+    word-wrap: break-word; /* Permet au texte de revenir à la ligne si nécessaire */
+    overflow: auto;
   }
 #divR{
     display: flex;

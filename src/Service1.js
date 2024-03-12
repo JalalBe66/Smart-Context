@@ -14,7 +14,7 @@ export default function Service1() {
     divB.style.border="solid 1px var(--violet)"
     divB.style.boxShadow="1px 1px 5px var(--violet)"
     divB.style.transition="0.6s"
-
+    
   }
   let resetColor=()=>{
     let divB=document.getElementById("full-inp")
