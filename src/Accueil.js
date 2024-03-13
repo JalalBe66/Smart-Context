@@ -2,13 +2,41 @@ import React from 'react'
 import GrandLogo from "./images/logo.png"
 import Question from "./images/entrevue.png"
 import Plume from "./images/ecrit.png"
+import IMG1 from "./images/img1.jpg"
+import IMG2 from "./images/img2.jpg"
+import IMG3 from "./images/img3.jpg"
 import "./styleCSS/accueil.css"
 import { Link } from 'react-router-dom'
 export default function Accueil() {
     return (
         <>
             <div id='accueil-container'>
-                    <img src={GrandLogo} width={"260px"} height={"260px"} style={{marginBottom:"3%"}} />
+            <div id="carouselExampleIndicators"  style={{width:"100%",height:"575px",display:"flex" ,marginBottom:"10%"}} class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators ">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={IMG1} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={IMG2} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={IMG3} class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span style={{backgroundColor:"black" , borderRadius:"50%" ,width:"35px", height:"35px"}}  class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span style={{backgroundColor:"black" , borderRadius:"50%" ,width:"35px", height:"35px"}} class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
                 <div id='disc-title'>
                     DESCRIPTION
                 </div>
