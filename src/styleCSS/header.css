@@ -1,0 +1,146 @@
+#bigContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0%;
+    box-shadow: 0px 1px 2px rgba(193, 191, 191, 0.518);
+    padding-top:1% ;
+}
+#top-header{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 170px;
+    height: 130%;
+    margin-left: 2%;
+    background-image: url("../images/LogoComplet.png");
+    background-size: cover;
+    background-position: center;
+}
+#conn-lang{
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+#langue{
+    width: 28px;
+    height: 28px;
+    display: flex;
+}
+#connection{
+    border:solid rgba(0, 0, 0, 0.473) 1px ;
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.511);
+    border-radius: 200px;
+    height:50px;
+    width: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#option{
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+#profile{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+#bottom-header{
+    display: flex;
+    width:80% ;
+    font-size:14px;
+    font-weight:600;
+    font-size: 14px;
+    height: 55%;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.nav-link{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+a{
+    color: #717171;
+    text-decoration: none;
+}
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+a.active{
+    border-bottom: 2px solid var(--violet)  ;
+    font-weight: bold;
+    color: black;
+
+}
+
+.services {
+  margin-right: 20px;
+  
+}
+
+.service {
+   position: relative; 
+}
+.service:hover {
+   cursor: pointer;
+   color: black;
+}
+
+.service-details {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-left: 5px ;
+  display: none;
+  background-color: #F0F5F9;
+  padding: 11px;
+  box-shadow:1px 1px 2px grey ;
+  border-radius: 10px;
+  border:dashed var(--violet) 1px ;
+}
+
+.service:hover .service-details {
+  display: block;
+  cursor: pointer;
+  
+}
+
+.service-details a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.service-details a:hover {
+    color:var(--violet);
+}
+#service-elem-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85px;
+    height: 60px;
+    border-radius: 20px ;
+}

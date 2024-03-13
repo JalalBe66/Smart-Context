@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+#message:focus,#name:focus,#email:focus,#subject:focus{
+    box-shadow: 0 0 3px var(--violet);
+    outline: none;
+    
+}
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #851BFD ;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: rgb(159, 155, 155);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    margin: auto;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    transition: 1s;
+    pointer-events: none;
+}
+
+.contact-error{
+    color: red;
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 8px 15px;
+    }
+}
