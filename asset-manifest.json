@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Smart-Context/static/css/main.1c1fb5ac.css",
+    "main.js": "/Smart-Context/static/js/main.da74d5b9.js",
+    "static/js/787.d4aba7ab.chunk.js": "/Smart-Context/static/js/787.d4aba7ab.chunk.js",
+    "static/media/IMG4.jpg": "/Smart-Context/static/media/IMG4.a585815d708acbba9050.jpg",
+    "static/media/logo.png": "/Smart-Context/static/media/logo.b722d6c50e749307ddd0.png",
+    "static/media/IMG1.jpg": "/Smart-Context/static/media/IMG1.99527eb80e74e01b19bb.jpg",
+    "static/media/IMG5.jpg": "/Smart-Context/static/media/IMG5.9a27ea4c70a7d623e377.jpg",
+    "static/media/LogoComplet.png": "/Smart-Context/static/media/LogoComplet.3cd3e7382497d34320bc.png",
+    "static/media/instagram.png": "/Smart-Context/static/media/instagram.15d77dca0ebcbb9aa0d5.png",
+    "static/media/twitter.png": "/Smart-Context/static/media/twitter.7e40f617aaa8eca864bb.png",
+    "static/media/utilisateur.png": "/Smart-Context/static/media/utilisateur.a6143582309785dca610.png",
+    "static/media/facebook.png": "/Smart-Context/static/media/facebook.49e67d43221b6bb1aa86.png",
+    "static/media/ecrit.png": "/Smart-Context/static/media/ecrit.e187a30ab14de92649df.png",
+    "static/media/linkedin.png": "/Smart-Context/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "static/media/entrevue.png": "/Smart-Context/static/media/entrevue.3f32ad412337e17a442d.png",
+    "index.html": "/Smart-Context/index.html",
+    "main.1c1fb5ac.css.map": "/Smart-Context/static/css/main.1c1fb5ac.css.map",
+    "main.da74d5b9.js.map": "/Smart-Context/static/js/main.da74d5b9.js.map",
+    "787.d4aba7ab.chunk.js.map": "/Smart-Context/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c1fb5ac.css",
+    "static/js/main.da74d5b9.js"
+  ]
+}
