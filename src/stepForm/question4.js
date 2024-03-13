@@ -20,7 +20,7 @@ export default class question4 extends Component {
         const {values,inputChange}=this.props
   return (
     
-    <div style={{marginTop:"10%" , marginBottom:"20%"}}>
+    <div style={{ marginBottom:"20%"}}>
         <div>
             <div>
             <div id='grand-logo'>

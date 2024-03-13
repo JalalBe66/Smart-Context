@@ -94,7 +94,7 @@ export default class form extends Component {
         }
         
         return (
-          <div style={{marginTop:"500px"}}>
+          <div >
             <h1>{this.state.question1}</h1>
           </div>
         )

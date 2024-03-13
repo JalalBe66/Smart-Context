@@ -20,7 +20,7 @@ export default class confirm extends Component {
         const {values:{question1,question2,question3,question4,question5,question6,question7}}=this.props
         return (
             <>
-            <div style={{marginTop:"10%" , marginBottom:"20%"}}>
+            <div style={{ marginBottom:"20%"}}>
                 <div>
                     <div>
                     <div id='grand-logo'>

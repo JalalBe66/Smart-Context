@@ -6,7 +6,7 @@ import ImageFlech from "./images/fleche-droite.png"
 import axios from 'axios';
 export default function Service1() {
   const [generatedText, setGeneratedText] = useState('');
-  const TOKEN = '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';
+  const API_KEY = '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';
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState('');
     let changeColorInp=()=>{
@@ -22,36 +22,45 @@ export default function Service1() {
   }
   const sendMessage = async () => {
     if (userInput.trim() !== '') {
-      
-      try {
-        const response = await axios.post(
-          "https://api-inference.huggingface.co/models/facebook/bart-large-cnn",
-          { inputs: "The capital of the country : '" + userInput + "'." },
-          { headers: { Authorization: `Bearer ${TOKEN}` } }
+        try {
+            const response = await axios.post(
+                "https://api.openai.com/v1/engines/gpt-3.5-turbo/completions", {
+                    model: 'gpt-3.5-turbo',
+                    messages: [{ role: 'user', content: userInput }],
+                    temperature: 0.3,
+                    max_tokens: 2000,
+                }, {
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + API_KEY,
+                    }
+                }
+            );
 
-        );
-        let chatDiv = document.getElementsByClassName("chat-messages")[0];
-        let input = document.getElementById("input-v");
-        let divReq = document.createElement("div");
-        let divReqP = document.createElement("div");
-        let divP = document.createElement("p");
-        divReq.id = "divReq";
-        divReqP.id = "divReqP";
-        divP.id = "divP";
-        divP.innerHTML = userInput;
-        divReqP.append(divP);
-        divReq.append(divReqP);
-        chatDiv.appendChild(divReq);
-        const generatedText = response.data[0].summary_text;
+            let chatDiv = document.getElementsByClassName("chat-messages")[0];
+            let input = document.getElementById("input-v");
+            let divReq = document.createElement("div");
+            let divReqP = document.createElement("div");
+            let divP = document.createElement("p");
+            divReq.id = "divReq";
+            divReqP.id = "divReqP";
+            divP.id = "divP";
+            divP.innerHTML = userInput;
+            divReqP.append(divP);
+            divReq.append(divReqP);
+            chatDiv.appendChild(divReq);
 
-        setMessages([...messages, { text: userInput, sender: 'user' }]);
-        setMessages([...messages, { text: generatedText, sender: 'ai' }]);
-        setUserInput('');
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
+            const generatedText = response.data.choices[0].message.content;
+
+            setMessages([...messages, { text: userInput, sender: 'user' }]);
+            setMessages([...messages, { text: generatedText, sender: 'ai' }]);
+            setUserInput('');
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
     }
-  }
+}
+
 
 
   return (
