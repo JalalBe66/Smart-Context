@@ -1,5 +1,5 @@
 import React from 'react'
-import GrandLogo from "./images/logo.png"
+import GrandLogo from "./images/LogoComplet.png"
 import Question from "./images/entrevue.png"
 import Plume from "./images/ecrit.png"
 import IMG3 from "./images/IMG1.jpg"
@@ -11,7 +11,10 @@ export default function Accueil() {
     return (
         <>
             <div id='accueil-container'>
-            <div id="carouselExampleIndicators"  style={{width:"100%",display:"flex",height:"550px" ,marginBottom:"10%",marginTop:"1.6%"}} class="carousel slide" data-bs-ride="carousel">
+            <div id='grand-logo' style={{width:"0px" , height:"0px"}}>
+                    <img id='grandImage'  src={GrandLogo} width={"0px"} height={"0px"} />
+            </div>
+            <div id="carouselExampleIndicators"  style={{width:"100%",display:"flex",height:"550px" ,marginBottom:"10%",marginTop:"-10%"}} class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators " >
     <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

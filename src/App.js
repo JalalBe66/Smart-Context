@@ -5,6 +5,8 @@ import Contact from "./Contact"
 import FAQ from "./FAQ"
 import Accueil from "./Accueil"
 import "./styleCSS/App.css"
+import Test from "./Test"
+import Result from "./Result"
 import Footer from "./Component/footer"
 import New from "./Component/newHeader"
 import {Routes , Route} from "react-router-dom"
@@ -19,6 +21,8 @@ function App() {
           <Route path="Service2" element={<Form/>}/>
           <Route path="FAQ" element={<FAQ/>}/>
           <Route path="Contact" element={<Contact/>}/>
+          <Route path="test" element={<Test/>}/>
+          <Route path="result" element={<Result/>}/>
         </Routes>
       <Footer/>
     </div>

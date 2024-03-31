@@ -94,13 +94,13 @@ function New(){
             <div className="col-5 d-flex justify-content-center align-items-center">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <div className="col-11"/>
+                        <div className="col-5"/>
                         <li class="nav-item">
                             <NavLink to="/">
-                                <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                                <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
                             </NavLink>    
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-3"/>
                         <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
@@ -110,18 +110,28 @@ function New(){
                                             <li><Link  to="Service2"><a id="link-serv" class="dropdown-item" href="#">Service 2</a></Link></li>
                                         </ul>
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-3"/>
                         <li class="nav-item">
                             <NavLink to="/FAQ">    
                                 <a id="link" class="nav-link" href="#">FAQ</a>
                             </NavLink>    
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-3"/>
                         <li class="nav-item">
                             <NavLink  to="/Contact">
                                 <a id="link" class="nav-link" href="#">Contact</a>
                             </NavLink>    
                             
+                        </li>
+                        <div className="col-3"/>
+                        <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Personality
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><Link to="test"><a  id="link-serv" class="dropdown-item" href="#">Test Personality</a></Link></li>
+                                            <li><Link  to="result"><a id="link-serv" class="dropdown-item" href="#">Result Personality</a></Link></li>
+                                        </ul>
                         </li>
                     </ul>
                 </div>
@@ -149,7 +159,7 @@ function New(){
         <ul class="navbar-nav flex-column me-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <NavLink to="/">
-                    <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                    <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
                 </NavLink>
             </li>
             <li class="nav-item dropdown">
@@ -170,6 +180,15 @@ function New(){
                 <NavLink to="/Contact">
                     <a id="link" class="nav-link" href="#">Contact</a>
                 </NavLink>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Personality
+                </a>
+                <ul class="dropdown-menu">
+                    <li><Link  to="test"><a id="link-serv" class="dropdown-item" href="#">Test</a></Link></li>
+                    <li><Link  to="result"><a id="link-serv" class="dropdown-item" href="#">Result</a></Link></li>
+                </ul>
             </li>
         </ul>
     
