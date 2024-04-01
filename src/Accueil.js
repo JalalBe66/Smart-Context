@@ -2,9 +2,9 @@ import React from 'react'
 import GrandLogo from "./images/LogoComplet.png"
 import Question from "./images/entrevue.png"
 import Plume from "./images/ecrit.png"
-import IMG3 from "./images/IMG1.jpg"
-import IMG2 from "./images/IMG5.jpg"
-import IMG1 from "./images/IMG4.jpg"
+import IMG3 from "./images/service3.png"
+import IMG2 from "./images/service2.png"
+import IMG1 from "./images/service.png"
 import "./styleCSS/accueil.css"
 import { Link } from 'react-router-dom'
 export default function Accueil() {
@@ -14,11 +14,11 @@ export default function Accueil() {
             <div id='grand-logo' style={{width:"0px" , height:"0px"}}>
                     <img id='grandImage'  src={GrandLogo} width={"0px"} height={"0px"} />
             </div>
-            <div id="carouselExampleIndicators"  style={{width:"100%",display:"flex",height:"550px" ,marginBottom:"10%",marginTop:"-10%"}} class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators"  style={{width:"100%",display:"flex",height:"750px" ,marginBottom:"10%",marginTop:"-10%"}} class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators " >
-    <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner" style={{display:"flex"}}>
   <div class="carousel-item active">
