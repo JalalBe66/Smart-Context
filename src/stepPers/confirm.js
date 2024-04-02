@@ -24,7 +24,7 @@ export default class confirm extends Component {
                 <div>
                     <div>
                         <div id='titre-p-serv2'>
-                        <p style={{color:"var(--violet)"}}>Result For The Personnalitie Test</p>
+                        <p style={{color:"var(--violet)"}}>Result For The Personnality Test</p>
                         </div>
                     </div>
                 </div>

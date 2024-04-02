@@ -9,6 +9,7 @@ import Test from "./Test"
 import Result from "./Result"
 import Footer from "./Component/footer"
 import New from "./Component/newHeader"
+import Guide from "./Guide"
 import {Routes , Route} from "react-router-dom"
 function App() {
   return (
@@ -16,13 +17,14 @@ function App() {
       <New/>
       
         <Routes>
-          <Route path="/" element={<Accueil/>} />
+          <Route path="/Smart-Context" element={<Accueil/>} />
           <Route path="Service1" element={<Service1/>}/>
           <Route path="Service2" element={<Form/>}/>
           <Route path="FAQ" element={<FAQ/>}/>
           <Route path="Contact" element={<Contact/>}/>
           <Route path="test" element={<Test/>}/>
           <Route path="result" element={<Result/>}/>
+          <Route path="guide" element={<Guide/>}/>
         </Routes>
       <Footer/>
     </div>

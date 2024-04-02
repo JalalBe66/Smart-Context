@@ -66,7 +66,7 @@ function New(){
         <div className="row first-header">
 
             <div className="col-1 d-flex align-items-center">
-                <NavLink to="/">
+                <NavLink to="/Smart-Context">
                     <a class="navbar-brand" href="#">
                         <i>
                             <img src={logoComplet} height={"66px"} />
@@ -96,11 +96,11 @@ function New(){
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <div className="col-5"/>
                         <li class="nav-item">
-                            <NavLink to="/">
+                            <NavLink to="/Smart-Context">
                                 <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
                             </NavLink>    
                         </li>
-                        <div className="col-3"/>
+                        <div className="col-2"/>
                         <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
@@ -110,20 +110,20 @@ function New(){
                                             <li><Link  to="Service2"><a id="link-serv" class="dropdown-item" href="#">Service 2</a></Link></li>
                                         </ul>
                         </li>
-                        <div className="col-3"/>
+                        <div className="col-2"/>
                         <li class="nav-item">
                             <NavLink to="/FAQ">    
                                 <a id="link" class="nav-link" href="#">FAQ</a>
                             </NavLink>    
                         </li>
-                        <div className="col-3"/>
+                        <div className="col-2"/>
                         <li class="nav-item">
                             <NavLink  to="/Contact">
                                 <a id="link" class="nav-link" href="#">Contact</a>
                             </NavLink>    
                             
                         </li>
-                        <div className="col-3"/>
+                        <div className="col-2"/>
                         <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Personality
@@ -132,6 +132,12 @@ function New(){
                                             <li><Link to="test"><a  id="link-serv" class="dropdown-item" href="#">Test Personality</a></Link></li>
                                             <li><Link  to="result"><a id="link-serv" class="dropdown-item" href="#">Result Personality</a></Link></li>
                                         </ul>
+                        </li>
+                        <div className="col-2"/>
+                        <li class="nav-item">
+                            <NavLink to="/guide">
+                                <a id="link" class="nav-link" href="#">Guide</a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
@@ -158,7 +164,7 @@ function New(){
     
         <ul class="navbar-nav flex-column me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <NavLink to="/">
+                <NavLink to="/Smart-Context">
                     <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
                 </NavLink>
             </li>
@@ -181,6 +187,7 @@ function New(){
                     <a id="link" class="nav-link" href="#">Contact</a>
                 </NavLink>
             </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Personality
@@ -190,8 +197,13 @@ function New(){
                     <li><Link  to="result"><a id="link-serv" class="dropdown-item" href="#">Result</a></Link></li>
                 </ul>
             </li>
+            <li class="nav-item">
+                <NavLink to="/guide">
+                    <a id="link" class="nav-link" href="#">Guide</a>
+                </NavLink>
+            </li>
         </ul>
-    
+
 </div>
 
   </div>

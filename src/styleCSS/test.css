@@ -1,0 +1,12 @@
+.imgS{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 25px;
+    box-shadow :1px 1px 6px var(--violet);
+}
+.txtS{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--violet);
+    font-weight: bolder;
+}

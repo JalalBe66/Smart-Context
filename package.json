@@ -46,7 +46,7 @@
     "style-loader": "^3.3.4"
   },
   "main": "index.js",
-  "repository": "https://github.com/JalalBe66/Smart-Context",
+  "repository": "https://github.com/ESL-AI/Smart-Context",
   "author": "JaBeXIX <jalalbelych011@gmail.com>",
   "license": "MIT"
 }
