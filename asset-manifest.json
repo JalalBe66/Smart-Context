@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Smart-Context/static/css/main.1e8d00b3.css",
-    "main.js": "/Smart-Context/static/js/main.c387c452.js",
+    "main.css": "/Smart-Context/static/css/main.2baabd29.css",
+    "main.js": "/Smart-Context/static/js/main.3e82a5e8.js",
     "static/js/787.d4aba7ab.chunk.js": "/Smart-Context/static/js/787.d4aba7ab.chunk.js",
     "static/media/service3.png": "/Smart-Context/static/media/service3.8b34557f6e3417aff8f4.png",
     "static/media/service2.png": "/Smart-Context/static/media/service2.2f618bfaf8fd68b6a1ed.png",
@@ -30,12 +30,12 @@
     "static/media/linkedin.png": "/Smart-Context/static/media/linkedin.6892b3ae328c7a1e055f.png",
     "static/media/entrevue.png": "/Smart-Context/static/media/entrevue.3f32ad412337e17a442d.png",
     "index.html": "/Smart-Context/index.html",
-    "main.1e8d00b3.css.map": "/Smart-Context/static/css/main.1e8d00b3.css.map",
-    "main.c387c452.js.map": "/Smart-Context/static/js/main.c387c452.js.map",
+    "main.2baabd29.css.map": "/Smart-Context/static/css/main.2baabd29.css.map",
+    "main.3e82a5e8.js.map": "/Smart-Context/static/js/main.3e82a5e8.js.map",
     "787.d4aba7ab.chunk.js.map": "/Smart-Context/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e8d00b3.css",
-    "static/js/main.c387c452.js"
+    "static/css/main.2baabd29.css",
+    "static/js/main.3e82a5e8.js"
   ]
 }
