@@ -14,17 +14,16 @@ export default function Accueil() {
             <div id='grand-logo' style={{width:"0px" , height:"0px"}}>
                     <img id='grandImage'  src={GrandLogo} width={"0px"} height={"0px"} />
             </div>
-            <div id="carouselExampleIndicators"  style={{width:"100%",display:"flex",height:"750px" ,marginBottom:"10%",marginTop:"-10%"}} class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators " >
+<div id="carouselExampleIndicators" style={{width:"100%",display:"flex",height:"600px" ,marginBottom:"10%",marginTop:"-10%"}} class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
     <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner" style={{display:"flex"}}>
-  <div class="carousel-item active">
-  <img src={IMG1} height={"100%"} class="d-block w-100" alt="..."/>
-</div>
-
+    <div class="carousel-item active">
+      <img src={IMG1} height={"100%"} class="d-block w-100" alt="..."/>
+    </div>
     <div class="carousel-item">
       <img src={IMG2} height={"100%"} class="d-block w-100" alt="..."/>
     </div>
@@ -33,7 +32,7 @@ export default function Accueil() {
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span style={{backgroundColor:"black" , borderRadius:"50%" ,width:"35px", height:"35px"}}  class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span style={{backgroundColor:"black" , borderRadius:"50%" ,width:"35px", height:"35px"}} class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
@@ -41,6 +40,7 @@ export default function Accueil() {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
                 <div id='disc-title'>
                     DESCRIPTION
                 </div>

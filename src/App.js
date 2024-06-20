@@ -18,6 +18,7 @@ function App() {
       
         <Routes>
           <Route path="/Smart-Context" element={<Accueil/>} />
+          <Route path="/" element={<Accueil/>} />
           <Route path="Service1" element={<Service1/>}/>
           <Route path="Service2" element={<Form/>}/>
           <Route path="FAQ" element={<FAQ/>}/>

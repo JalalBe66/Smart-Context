@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./styleCSS/Contact.css"
-import Form from "./stepPers/form"
+import Form from "./stepPers/AdminPers"
 
 
    let Result=()=>{
