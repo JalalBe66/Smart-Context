@@ -4,9 +4,51 @@ import "../styleCSS/question1.css";
 import "../styleCSS/service2.css";
 
 export default function Personnality() {
-  const containerRef = useRef(null);
+    const containerRef = useRef(null);
 
-  const addNew = () => {
+    const personalities = [
+    { value: 'ISTJ', label: 'ISTJ (Logisticien)' },
+    { value: 'ISFJ', label: 'ISFJ (Défenseur)' },
+    { value: 'INFJ', label: 'INFJ (Avocat)' },
+    { value: 'INTJ', label: 'INTJ (Architecte)' },
+    { value: 'ISTP', label: 'ISTP (Virtuose)' },
+    { value: 'ISFP', label: 'ISFP (Aventurier)' },
+    { value: 'INFP', label: 'INFP (Médiateur)' },
+    { value: 'INTP', label: 'INTP (Logicien)' },
+    { value: 'ESTP', label: 'ESTP (Entrepreneur)' },
+    { value: 'ESFP', label: 'ESFP (Amuseur)' },
+    { value: 'ENFP', label: 'ENFP (Inspirateur)' },
+    { value: 'ENTP', label: 'ENTP (Innovateur)' },
+    { value: 'ESTJ', label: 'ESTJ (Directeur)' },
+    { value: 'ESFJ', label: 'ESFJ (Consul)' },
+    { value: 'ENFJ', label: 'ENFJ (Protagoniste)' },
+    { value: 'ENTJ', label: 'ENTJ (Commandant)' }
+];
+const deletePers = (event) => {
+    let MaxComp=document.getElementsByClassName("Container-barre-serv2").length
+
+    if(MaxComp>1){
+        const containnerParent=event.target.closest('.Container-barre-serv2')
+        containnerParent.remove()
+        let MaxPersNbr=document.getElementsByClassName("Container-barre-serv2").length-1
+        let MaxPers=document.getElementsByClassName("Container-barre-serv2")[MaxPersNbr]
+        let buttonComponent=MaxPers.lastChild
+        buttonComponent.appendChild(event.target)
+        const referenceElement = buttonComponent.children[1];
+        buttonComponent.insertBefore(event.target, referenceElement);
+    }
+}
+const addNew = () => {
+    
+    let MaxPersNbr=document.getElementsByClassName("Container-barre-serv2").length
+    
+    let buttonDel=document.getElementsByClassName("delete-button")[0]
+    buttonDel.remove()
+    const newButtonDel=document.createElement("button")
+    newButtonDel.className="delete-button"
+    newButtonDel.style.backgroundColor="var(--violet)"
+    newButtonDel.textContent="Delete"
+    newButtonDel.onclick=deletePers
     // Création du nouvel élément div avec la classe Container-barre-serv2
     const newContainer = document.createElement('div');
     newContainer.className = 'Container-barre-serv2';
@@ -49,14 +91,18 @@ export default function Personnality() {
     input1.className = 'inp-q1';
     input1.placeholder = 'Name of student 1';
 
-    const input2 = document.createElement('input');
-    input2.name = 'question2';
-    input2.className = 'inp-q1';
-    input2.placeholder = 'Personality of student 1';
-
+    const select2 = document.createElement('select');
+    select2.name = 'question2';
+    select2.className = 'inp-q1';
+    personalities.forEach(personality => {
+      const option = document.createElement('option');
+      option.value = personality.value;
+      option.textContent = personality.label;
+      select2.appendChild(option);
+    });
     // Ajout des inputs au conteneur inp-q1-container
     inpContainer.appendChild(input1);
-    inpContainer.appendChild(input2);
+    inpContainer.appendChild(select2);
 
     // Ajout du titre et du conteneur inp-q1-container au conteneur question1-container
     questionContainer.appendChild(title);
@@ -65,12 +111,15 @@ export default function Personnality() {
     // Ajout du conteneur question1-container au nouvel élément div
     newContainer.appendChild(questionContainer);
        // Ajout des boutons au conteneur de boutons
-       buttonContainer.appendChild(buttonAdd);
-       buttonContainer.appendChild(buttonResult);
-       newContainer.appendChild(questionContainer);
-       newContainer.appendChild(buttonContainer);
+    buttonContainer.appendChild(buttonAdd);
+    buttonContainer.appendChild(newButtonDel);
+    buttonContainer.appendChild(buttonResult);
+    newContainer.appendChild(questionContainer);
+    newContainer.appendChild(buttonContainer);
     // Ajout du nouvel élément div au conteneur principal
     containerRef.current.appendChild(newContainer);
+    let MaxPers=document.getElementsByClassName("Container-barre-serv2")[MaxPersNbr]
+
   };
 
   return (
@@ -87,12 +136,30 @@ export default function Personnality() {
           <p id='title-q1'>Student 1</p>
           <div id='inp-q1-container'>
             <input name='question1' className="inp-q1" placeholder="Name of student 1" />
-            <input name='question2' className="inp-q1" placeholder="Personality of student 1" />
+            <select name='question2' className="inp-q1" placeholder="Personality of student 1" >
+                <option value="ISTJ">ISTJ (Logisticien)</option>
+                <option value="ISFJ">ISFJ (Défenseur)</option>
+                <option value="INFJ">INFJ (Avocat)</option>
+                <option value="INTJ">INTJ (Architecte)</option>
+                <option value="ISTP">ISTP (Virtuose)</option>
+                <option value="ISFP">ISFP (Aventurier)</option>
+                <option value="INFP">INFP (Médiateur)</option>
+                <option value="INTP">INTP (Logicien)</option>
+                <option value="ESTP">ESTP (Entrepreneur)</option>
+                <option value="ESFP">ESFP (Amuseur)</option>
+                <option value="ENFP">ENFP (Inspirateur)</option>
+                <option value="ENTP">ENTP (Innovateur)</option>
+                <option value="ESTJ">ESTJ (Directeur)</option>
+                <option value="ESFJ">ESFJ (Consul)</option>
+                <option value="ENFJ">ENFJ (Protagoniste)</option>
+                <option value="ENTJ">ENTJ (Commandant)</option>
+            </select>
           </div>
         </div>
         <div id='buttons-serv2'>
           <button className="previous-button" onClick={addNew} style={{ backgroundColor: 'var(--violet)' }}>Add</button>
           <button className="next-button" onClick={() => console.log('Result')}>Result</button>
+          <button className="delete-button" onClick={deletePers} style={{ backgroundColor: 'var(--violet)' }}>Delete</button>
         </div>
       </div>
     </div>
