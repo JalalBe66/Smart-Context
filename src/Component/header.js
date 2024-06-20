@@ -36,7 +36,7 @@
 //                 </div> */}
 //             </div>
 //             {showModal &&(<div id="bottom-header">
-//                 <NavLink to="/"><div className="nav-link">Acceuil</div></NavLink>
+//                 <NavLink to="/"><div className="nav-link"></div></NavLink>
 //                 <div className="services">
 //                             <div  className="service">
 //                                 <p style={{color:"#717171",fontSize:"14px"}}>Service </p>
@@ -90,7 +90,7 @@ export default function Header() {
 
       <div id="bottom-header">
           <NavLink to="/">
-            <div className="nav-link">Acceuil</div>
+            <div className="nav-link">Home</div>
           </NavLink>
           <div className="services">
             <div className="service">
@@ -124,7 +124,7 @@ export default function Header() {
             </div> <br />
             
           <NavLink to="/">
-            <div className="nav-link">Acceuil</div>
+            <div className="nav-link">Home</div>
           </NavLink>
           <div className="services">
             <div className="service">

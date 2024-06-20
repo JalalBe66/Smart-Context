@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jalalbe66.github.io/Smart-Context/",
+  "homepage": "https://ESL-AI.github.io/Smart-Context/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -47,7 +47,7 @@
     "style-loader": "^3.3.4"
   },
   "main": "index.js",
-  "repository": "https://github.com/JalalBe66/Smart-Context",
+  "repository": "https://github.com/ESL-AI/Smart-Context",
   "author": "JaBeXIX <jalalbelych011@gmail.com>",
   "license": "MIT"
 }

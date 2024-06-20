@@ -138,7 +138,11 @@ a.serv-button-opt{
 a.serv-button-opt:hover{
     color: aliceblue;
 }
-
+#grandImage{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
 
 
 @media (max-width: 480px) {
@@ -220,7 +224,22 @@ a.serv-button-opt:hover{
         margin-top: 8%;
     }
 }
-
+@media (max-width: 993px) {
+    #carouselExampleIndicators {
+        visibility: hidden;
+        height: 2px;
+    }
+    #grandImage{
+        visibility: visible;
+        height: 500px;
+        width: 500px;
+    }
+    #grand-logo{
+        
+        width: 500px;
+        height: 500px;
+    }
+}
 /* @media (min-width: 768px ) {
     #btn-srv1{
         height: 10%;
