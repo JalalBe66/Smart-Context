@@ -1,6 +1,6 @@
 import React from 'react'
 import {Component} from "react"
-import GrandLogo from "../images/LogoComplet.png"
+// import GrandLogo from "../images/LogoComplet.png"
 import "../styleCSS/questions.css"
 import "../styleCSS/service2.css"
 export default class confirm extends Component {
