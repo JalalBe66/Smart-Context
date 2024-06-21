@@ -1,3 +1,4 @@
+// https://blog.hubspot.fr/website/page-accueil-site-web
 import React from 'react'
 import image1 from "./images/image1.png"
 import image2 from "./images/image2.png"
