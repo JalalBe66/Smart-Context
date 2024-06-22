@@ -3,6 +3,7 @@ import Service1 from "./Service1"
 import Form from "./stepForm/form"
 import Contact from "./Contact"
 import FAQ from "./FAQ"
+import Confirm from "./stepPers/Confirm.js"
 import Accueil from "./Accueil"
 import "./styleCSS/App.css"
 import Test from "./Test"
@@ -25,6 +26,7 @@ function App() {
           <Route path="Contact" element={<Contact/>}/>
           <Route path="test" element={<Test/>}/>
           <Route path="result" element={<Result/>}/>
+          <Route path="confirm" element={<Confirm/>}/>
           <Route path="guide" element={<Guide/>}/>
         </Routes>
       <Footer/>

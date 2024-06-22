@@ -1,11 +1,15 @@
-import React, { useRef } from 'react';
+import React, { useRef , useState } from 'react';
 import GrandLogo from "../images/LogoComplet.png";
 import "../styleCSS/question1.css";
 import "../styleCSS/service2.css";
+import { useNavigate } from 'react-router-dom';
 
 export default function Personnality() {
-    const containerRef = useRef(null);
 
+    const containerRef = useRef(null);
+    let studentNum=1
+    let resultText=""
+    const navigate = useNavigate();
     const personalities = [
     { value: 'ISTJ', label: 'ISTJ (Logisticien)' },
     { value: 'ISFJ', label: 'ISFJ (Défenseur)' },
@@ -24,9 +28,12 @@ export default function Personnality() {
     { value: 'ENFJ', label: 'ENFJ (Protagoniste)' },
     { value: 'ENTJ', label: 'ENTJ (Commandant)' }
 ];
+const handleResultClick = () => {
+  navigate('/confirm', { state: {resultText} });
+};
 const deletePers = (event) => {
     let MaxComp=document.getElementsByClassName("Container-barre-serv2").length
-
+    studentNum-=1
     if(MaxComp>1){
         const containnerParent=event.target.closest('.Container-barre-serv2')
         containnerParent.remove()
@@ -39,9 +46,8 @@ const deletePers = (event) => {
     }
 }
 const addNew = () => {
-    
     let MaxPersNbr=document.getElementsByClassName("Container-barre-serv2").length
-    
+    studentNum+=1
     let buttonDel=document.getElementsByClassName("delete-button")[0]
     buttonDel.remove()
     const newButtonDel=document.createElement("button")
@@ -64,13 +70,12 @@ const addNew = () => {
     buttonAdd.textContent = 'Add';
     buttonAdd.onclick = addNew;
 
-    buttonAdd.style.backgroundColor = 'var(--violet)';
 
     // Création et ajout du bouton Result
     const buttonResult = document.createElement('button');
     buttonResult.className = 'next-button';
     buttonResult.textContent = 'Result';
-    buttonResult.onclick = () => console.log('Result');
+    buttonResult.onclick = handleResultClick;
     
     // Création de l'élément div pour la question1-container
     const questionContainer = document.createElement('div');
@@ -79,7 +84,7 @@ const addNew = () => {
     // Création de l'élément p pour le titre de la question
     const title = document.createElement('p');
     title.id = 'title-q1';
-    title.textContent = 'Student 1';
+    title.textContent = 'Student '+studentNum;
 
     // Création de l'élément div pour inp-q1-container
     const inpContainer = document.createElement('div');
@@ -87,13 +92,15 @@ const addNew = () => {
 
     // Création des éléments input pour les questions
     const input1 = document.createElement('input');
-    input1.name = 'question1';
+    input1.name = 'student'+studentNum;
     input1.className = 'inp-q1';
-    input1.placeholder = 'Name of student 1';
+    input1.onkeyup = resultFunction
+    input1.placeholder = 'Name of student '+studentNum;
 
     const select2 = document.createElement('select');
-    select2.name = 'question2';
+    select2.name = 'personality'+studentNum;
     select2.className = 'inp-q1';
+    select2.onchange = resultFunction;
     personalities.forEach(personality => {
       const option = document.createElement('option');
       option.value = personality.value;
@@ -121,7 +128,20 @@ const addNew = () => {
     let MaxPers=document.getElementsByClassName("Container-barre-serv2")[MaxPersNbr]
 
   };
+  let resultFunction = ()=>{
+    let maxContainner=document.getElementsByClassName("Container-barre-serv2").length+1
+    resultText=""
+    for(let i = 1;i<maxContainner ;i++){
+      if(i<maxContainner-1){
+      resultText+="the student "+document.getElementsByName("student"+i)[0].value+" has the personality "+document.getElementsByName("personality"+i)[0].value+" and "
+    }
+    else{
+      resultText+="the student "+document.getElementsByName("student"+i)[0].value+" has the personality "+document.getElementsByName("personality"+i)[0].value
+    }
+  }
+    return resultText
 
+  }
   return (
     <div ref={containerRef} style={{ marginBottom: "20%" }}>
       <div>
@@ -135,8 +155,8 @@ const addNew = () => {
         <div className="question1-container">
           <p id='title-q1'>Student 1</p>
           <div id='inp-q1-container'>
-            <input name='question1' className="inp-q1" placeholder="Name of student 1" />
-            <select name='question2' className="inp-q1" placeholder="Personality of student 1" >
+            <input name='student1' className="inp-q1" onChange={resultFunction} placeholder="Name of student 1" />
+            <select name='personality1' className="inp-q1" onChange={resultFunction} placeholder="Personality of student 1" >
                 <option value="ISTJ">ISTJ (Logisticien)</option>
                 <option value="ISFJ">ISFJ (Défenseur)</option>
                 <option value="INFJ">INFJ (Avocat)</option>
@@ -157,9 +177,9 @@ const addNew = () => {
           </div>
         </div>
         <div id='buttons-serv2'>
-          <button className="previous-button" onClick={addNew} style={{ backgroundColor: 'var(--violet)' }}>Add</button>
-          <button className="next-button" onClick={() => console.log('Result')}>Result</button>
-          <button className="delete-button" onClick={deletePers} style={{ backgroundColor: 'var(--violet)' }}>Delete</button>
+          <button className="previous-button" onClick={addNew}  >Add</button>
+          <button className="delete-button" onClick={deletePers}  >Delete</button>
+          <button onClick={handleResultClick} className="next-button" >Result</button>
         </div>
       </div>
     </div>
