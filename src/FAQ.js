@@ -27,12 +27,7 @@ export default function FAQ() {
     {displayPanel1 && (
       <div className="panel">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada odio et dolor lacinia, sed finibus
-          nisl varius. Nulla facilisi. Sed vehicula risus in tortor bibendum, a faucibus velit vestibulum. Morbi
-          fringilla, quam sed venenatis finibus, eros ligula varius justo, ac lacinia ex enim vitae nisl. Proin eget
-          varius lectus. Nulla auctor lobortis metus, vitae fringilla dui dignissim at. Praesent rhoncus felis et massa
-          posuere, eu posuere lacus fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia curae; Mauris ultricies risus id semper commodo. Aliquam erat volutpat.
+        Engineering Service Learning (ESL) is a pedagogical approach aimed at preparing students for the demands of the modern workforce within engineering disciplines. It emphasizes practical experience and community service to foster a deeper understanding of the societal impact of engineering work. ESL encourages students to address real-world needs through their projects, promoting social skill development, collaboration, and reflection. By integrating service learning into engineering education, institutions create inclusive and supportive learning environments that align with industry expectations and contribute to societal advancement.
         </p>
       </div>
     )}
@@ -46,12 +41,7 @@ export default function FAQ() {
     {displayPanel2 && (
       <div className="panel">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada odio et dolor lacinia, sed finibus
-          nisl varius. Nulla facilisi. Sed vehicula risus in tortor bibendum, a faucibus velit vestibulum. Morbi
-          fringilla, quam sed venenatis finibus, eros ligula varius justo, ac lacinia ex enim vitae nisl. Proin eget
-          varius lectus. Nulla auctor lobortis metus, vitae fringilla dui dignissim at. Praesent rhoncus felis et massa
-          posuere, eu posuere lacus fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia curae; Mauris ultricies risus id semper commodo. Aliquam erat volutpat.
+        Engineering Service Learning (ESL) offers students practical experience through real-world projects addressing community needs, fostering a deeper understanding of their efforts' purpose and value. It also cultivates social skills through collaboration, enhances community impact, and promotes reflective practice, nurturing a sense of social responsibility and ethical awareness. By integrating ESL, institutions create inclusive learning environments where students and staff collaborate on projects, fostering mutual respect and care while meeting industry demands and societal expectations.
         </p>
       </div>
     )}
@@ -65,12 +55,7 @@ export default function FAQ() {
     {displayPanel3 && (
       <div className="panel">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada odio et dolor lacinia, sed finibus
-          nisl varius. Nulla facilisi. Sed vehicula risus in tortor bibendum, a faucibus velit vestibulum. Morbi
-          fringilla, quam sed venenatis finibus, eros ligula varius justo, ac lacinia ex enim vitae nisl. Proin eget
-          varius lectus. Nulla auctor lobortis metus, vitae fringilla dui dignissim at. Praesent rhoncus felis et massa
-          posuere, eu posuere lacus fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-          cubilia curae; Mauris ultricies risus id semper commodo. Aliquam erat volutpat.
+        This platform provides users with access to a vast array of information and knowledge across various subjects, ensuring accurate and detailed answers to inquiries in science, technology, history, and more. Additionally, users can seek personalized assistance and guidance on academic, problem-solving, and writing-related queries. The platform offers convenience, enabling users to access information and support at any time and from any location, streamlining the process of obtaining prompt responses without the need for extensive searches. Interacting with the AI fosters learning and skill development, enhancing knowledge, critical thinking, and problem-solving abilities through meaningful discussions. Furthermore, its accessibility to anyone with an internet connection makes it an invaluable resource for individuals from diverse backgrounds and locations. Overall, this platform serves as a multifaceted tool for accessing information, receiving assistance, and engaging in learning and skill development.
         </p>
       </div>
     )}

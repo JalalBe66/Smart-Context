@@ -62,11 +62,12 @@ function New(){
                     </div>
                 </nav> */}
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
     <div class="container-fluid">
         <div className="row first-header">
 
             <div className="col-1 d-flex align-items-center">
-                <NavLink to="/">
+                <NavLink to="/Smart-Context">
                     <a class="navbar-brand" href="#">
                         <i>
                             <img src={logoComplet} height={"66px"} />
@@ -75,11 +76,61 @@ function New(){
                 </NavLink>
 
             </div>
-            <div className="col-10"></div>
+            <div className="col-9 d-flex justify-content-center align-items-center">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div className="col-3"/>
+                        <li class="nav-item">
+                            <NavLink to="/Smart-Context">
+                                <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
+                            </NavLink>    
+                        </li>
+                        <div className="col-2"/>
+                        <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Services
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><Link to="Service1"><a  id="link-serv" class="dropdown-item" href="#">Service 1</a></Link></li>
+                                            <li><Link  to="Service2"><a id="link-serv" class="dropdown-item" href="#">Service 2</a></Link></li>
+                                        </ul>
+                        </li>
+                        <div className="col-2"/>
+                        <li class="nav-item">
+                            <NavLink to="/FAQ">    
+                                <a id="link" class="nav-link" href="#">FAQ</a>
+                            </NavLink>    
+                        </li>
+                        <div className="col-2"/>
+                        <li class="nav-item">
+                            <NavLink  to="/Contact">
+                                <a id="link" class="nav-link" href="#">Contact</a>
+                            </NavLink>    
+                            
+                        </li>
+                        <div className="col-2"/>
+                        <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Personality
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><Link to="test"><a  id="link-serv" class="dropdown-item" href="#">Test Personality</a></Link></li>
+                                            <li><Link  to="result"><a id="link-serv" class="dropdown-item" href="#">Result Personality</a></Link></li>
+                                        </ul>
+                        </li>
+                        <div className="col-2"/>
+                        <li class="nav-item">
+                            <NavLink to="/guide">
+                                <a id="link" class="nav-link" href="#">Guide</a>
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+</div>
+            <div className="col-5"></div>
             <div className="col-1 profile d-flex justify-content-end align-items-center">
-  <a className="navbar-brand" href="#">
-    <i><img src={user} height={"66px"} alt="User" /></i>
-  </a>
+
+  
   <button
     className="navbar-toggler"
     type="button"
@@ -90,17 +141,17 @@ function New(){
     <span className="navbar-toggler-icon"></span>
   </button>
 </div>
-            <div className="col-12"/>
-            <div className="col-5 d-flex justify-content-center align-items-center">
+            {/* <div className="col-12"/> */}
+            {/* <div className="col-5 d-flex justify-content-center align-items-center">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <div className="col-11"/>
+                        <div className="col-5"/>
                         <li class="nav-item">
-                            <NavLink to="/">
-                                <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                            <NavLink to="/Smart-Context">
+                                <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
                             </NavLink>    
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-2"/>
                         <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Services
@@ -110,24 +161,40 @@ function New(){
                                             <li><Link  to="Service2"><a id="link-serv" class="dropdown-item" href="#">Service 2</a></Link></li>
                                         </ul>
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-2"/>
                         <li class="nav-item">
                             <NavLink to="/FAQ">    
                                 <a id="link" class="nav-link" href="#">FAQ</a>
                             </NavLink>    
                         </li>
-                        <div className="col-10"/>
+                        <div className="col-2"/>
                         <li class="nav-item">
                             <NavLink  to="/Contact">
                                 <a id="link" class="nav-link" href="#">Contact</a>
                             </NavLink>    
                             
                         </li>
+                        <div className="col-2"/>
+                        <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Personality
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><Link to="test"><a  id="link-serv" class="dropdown-item" href="#">Test Personality</a></Link></li>
+                                            <li><Link  to="result"><a id="link-serv" class="dropdown-item" href="#">Result Personality</a></Link></li>
+                                        </ul>
+                        </li>
+                        <div className="col-2"/>
+                        <li class="nav-item">
+                            <NavLink to="/guide">
+                                <a id="link" class="nav-link" href="#">Guide</a>
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
-            </div>
+</div> */}
                 
-        </div>
+        </div> 
         
     </div>
     
@@ -148,8 +215,8 @@ function New(){
     
         <ul class="navbar-nav flex-column me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <NavLink to="/">
-                    <a id="link" class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                <NavLink to="/Smart-Context">
+                    <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
                 </NavLink>
             </li>
             <li class="nav-item dropdown">
@@ -171,8 +238,23 @@ function New(){
                     <a id="link" class="nav-link" href="#">Contact</a>
                 </NavLink>
             </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Personality
+                </a>
+                <ul class="dropdown-menu">
+                    <li><Link  to="test"><a id="link-serv" class="dropdown-item" href="#">Test</a></Link></li>
+                    <li><Link  to="result"><a id="link-serv" class="dropdown-item" href="#">Result</a></Link></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <NavLink to="/guide">
+                    <a id="link" class="nav-link" href="#">Guide</a>
+                </NavLink>
+            </li>
         </ul>
-    
+
 </div>
 
   </div>

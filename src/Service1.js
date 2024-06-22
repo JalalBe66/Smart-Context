@@ -87,6 +87,7 @@ export default function Service1() {
             id='input-v'
             placeholder="Type your message..."
             onChange={(e) => setUserInput(e.target.value)}
+            style={{width:"90%"}}
           />
           <div style={{width:"43px",height:"43px",display:"flex"}}><button  id='btn-serv1' onClick={sendMessage}></button></div>
           </div>

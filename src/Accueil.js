@@ -1,27 +1,29 @@
 import React from 'react'
-import GrandLogo from "./images/logo.png"
+import GrandLogo from "./images/LogoComplet.png"
 import Question from "./images/entrevue.png"
 import Plume from "./images/ecrit.png"
-import IMG3 from "./images/IMG1.jpg"
-import IMG2 from "./images/IMG5.jpg"
-import IMG1 from "./images/IMG4.jpg"
+import IMG3 from "./images/service3.png"
+import IMG2 from "./images/service2.png"
+import IMG1 from "./images/service.png"
 import "./styleCSS/accueil.css"
 import { Link } from 'react-router-dom'
 export default function Accueil() {
     return (
         <>
             <div id='accueil-container'>
-            <div id="carouselExampleIndicators"  style={{width:"100%",display:"flex",height:"550px" ,marginBottom:"10%",marginTop:"1.6%"}} class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators " >
-    <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button style={{backgroundColor:"black"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id='grand-logo' style={{width:"0px" , height:"0px"}}>
+                    <img id='grandImage'  src={GrandLogo} width={"0px"} height={"0px"} />
+            </div>
+<div id="carouselExampleIndicators" style={{width:"100%",display:"flex",height:"600px" ,marginBottom:"10%",marginTop:"-10%"}} class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button style={{backgroundColor:"white"}} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner" style={{display:"flex"}}>
-  <div class="carousel-item active">
-  <img src={IMG1} height={"100%"} class="d-block w-100" alt="..."/>
-</div>
-
+    <div class="carousel-item active">
+      <img src={IMG1} height={"100%"} class="d-block w-100" alt="..."/>
+    </div>
     <div class="carousel-item">
       <img src={IMG2} height={"100%"} class="d-block w-100" alt="..."/>
     </div>
@@ -30,7 +32,7 @@ export default function Accueil() {
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span style={{backgroundColor:"black" , borderRadius:"50%" ,width:"35px", height:"35px"}}  class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span style={{backgroundColor:"black" , borderRadius:"50%" ,width:"35px", height:"35px"}} class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
@@ -38,6 +40,7 @@ export default function Accueil() {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
                 <div id='disc-title'>
                     DESCRIPTION
                 </div>
@@ -60,7 +63,7 @@ export default function Accueil() {
                         <div class='serv-contenu'>
                             <p>To receive a response that caters to your needs, please provide general information about your project. While this may not be as specific as answering specific questions, these details will help us understand your overall requirements. Please provide as many details as possible about the goals, constraints, and expectations of your project. We will do our best to provide you with a response that is tailored to your situation. Thank you!</p>
                         </div>
-                        <div class='serv-button' ><Link className='serv-button-opt' to="Service1">Access the service</Link></div>
+                        <div class='serv-button' ><Link className='serv-button-opt' to="/Service1">Access the service</Link></div>
                     </div>
                     <div id='sep'></div>
                     <div class='serv'>
@@ -74,7 +77,7 @@ export default function Accueil() {
                         <div class='serv-contenu'>
                             <p>To obtain a precise and accurate response regarding your project, please answer the specific questions posed on our website. By providing detailed information about your project, we can offer you personalized and tailored assistance to meet your needs. Please carefully fill out the required fields and provide all relevant information. We are committed to providing you with a comprehensive response based on the information you provide. Thank you for your cooperation!</p>
                         </div>
-                        <div class='serv-button'><Link className='serv-button-opt' to="Service2">Access the service</Link></div>
+                        <div class='serv-button'><Link className='serv-button-opt' to="/Service2">Access the service</Link></div>
                     </div>
                 </div>
             </div>
