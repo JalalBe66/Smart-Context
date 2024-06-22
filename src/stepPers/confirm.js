@@ -18,7 +18,7 @@ export default function Confirm(){
         </div>
         <div  className="Container-barre-serv2">
           <div className="question1-container">
-            <p id='title-q1'>{resultText}</p>
+            <p id='title-q1'>{resultText} (prompt)</p>
 
           </div>
 

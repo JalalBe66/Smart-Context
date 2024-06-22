@@ -133,10 +133,10 @@ const addNew = () => {
     resultText=""
     for(let i = 1;i<maxContainner ;i++){
       if(i<maxContainner-1){
-      resultText+="the student "+document.getElementsByName("student"+i)[0].value+" has the personality "+document.getElementsByName("personality"+i)[0].value+" and "
+      resultText+="the student "+document.getElementsByName("student"+i)[0].value+" has "+document.getElementsByName("personality"+i)[0].value+" personality and "
     }
     else{
-      resultText+="the student "+document.getElementsByName("student"+i)[0].value+" has the personality "+document.getElementsByName("personality"+i)[0].value
+      resultText+="the student "+document.getElementsByName("student"+i)[0].value+" has "+document.getElementsByName("personality"+i)[0].value+" personality"
     }
   }
     return resultText
