@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "test-methode1 -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.10.0",
-    "test-methode1": "^6.1.1",
+    "gh-pages": "^6.1.1",
     "react-scripts": "^5.0.1",
     "style-loader": "^3.3.4"
   },
